@@ -3,4 +3,5 @@ author: Vangelis Antzoulatos
 remote_theme: BDHU/minimalist
 plugins:
   - jekyll-remote-theme
+  - jekyll-seo-tag
 color-scheme: dark
