@@ -3,6 +3,15 @@
 
 @import "{{ site.theme }}";
 
+
+.sidebar {
+  background: #fdd; /* rouge clair */
+}
+
+.main {
+  background: #def; /* bleu clair */
+}
+
 .sidebar {
   width: 320px;  /* ou 280px selon ton goût */
 }
