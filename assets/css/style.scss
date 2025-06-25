@@ -15,7 +15,7 @@ section {
 
 
 .sidebar {
-  width: 320px;  /* ou 280px selon ton goût */
+  width: 185px;  /* ou 280px selon ton goût */
 }
 
 .sidebar header img.img-circle {
@@ -25,4 +25,8 @@ section {
 .sidebar header h1 {
   margin-bottom: 0.25rem;
   line-height: 1.1;
+}
+
+.sidebar-footer {
+  display: none !important;
 }
