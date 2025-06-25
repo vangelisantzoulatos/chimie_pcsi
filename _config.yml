@@ -5,3 +5,4 @@ plugins:
 color-scheme: dark
 
 logo: /assets/images/logo.png
+favicon: true
