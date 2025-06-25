@@ -18,6 +18,9 @@ sidebar:
     icon: <i class="fa-solid fa-book"></i>
     link: /    
   
+  - name: "> "Transformations de la matière
+  icon: <i class="fa-solid fa-circle" style="opacity: 0;"></i>
+  link: /
 
   - name: Travaux Pratiques
     icon: <i class="fa-solid fa-flask"></i>
