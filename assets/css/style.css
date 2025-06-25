@@ -1,0 +1,17 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.sidebar {
+  max-width: 270px;  /* ou 280px selon ton goût */
+}
+
+.sidebar header img.img-circle {
+  max-height: 50px;
+}
+
+.sidebar header h1 {
+  margin-bottom: 0.25rem;
+  line-height: 1.1;
+}
