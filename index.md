@@ -1,5 +1,6 @@
 ---
 layout: default
+title : Chimie PCSI
 ---
 
 # Bienvenue
