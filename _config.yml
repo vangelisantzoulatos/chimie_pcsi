@@ -14,7 +14,7 @@ sidebar:
     link: /
 
 
-  - name: Cours 
+  - name: Cours & Exercices
     icon: <i class="fa-solid fa-book"></i>
     link: /    
   
@@ -22,7 +22,7 @@ sidebar:
     icon: <i class="fa-solid fa-circle" style="opacity:0"></i>
     link: /
 
-  
+
   - name: Travaux Pratiques
     icon: <i class="fa-solid fa-flask"></i>
     link: /
