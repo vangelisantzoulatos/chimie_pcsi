@@ -13,9 +13,6 @@ sidebar:
     icon: <i class="fa-solid fa-house"></i>
     link: /
 
-  - name: "<hr style='border: 0.5px solid #333; margin: 0.5em 0;'>"
-    link: ""
-
   - name: Cours & Exercices
     icon: <i class="fa-solid fa-book"></i>
     link: ""    

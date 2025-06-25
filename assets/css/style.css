@@ -4,11 +4,11 @@
 @import "{{ site.theme }}";
 
 .sidebar {
-  max-width: 270px;  /* ou 280px selon ton goût */
+  max-width: 300px;  /* ou 280px selon ton goût */
 }
 
 .sidebar header img.img-circle {
-  max-height: 50px;
+  max-height: 45px;
 }
 
 .sidebar header h1 {
