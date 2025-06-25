@@ -31,11 +31,15 @@ body {
   width: 280px;  /* ou 280px selon ton goût */
 }
 
-
-
-.sidebar header img.img-circle {
-  max-height: 100px;
+.sidebar header {
+  text-align: center;
 }
+.sidebar header img.img-circle {
+  display: block;
+  margin: 0 auto;
+  max-height: 50px;
+}
+
 
 .sidebar header h1 {
   margin-bottom: 0.25rem;
