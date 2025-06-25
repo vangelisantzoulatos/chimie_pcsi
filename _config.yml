@@ -6,3 +6,25 @@ color-scheme: dark
 
 logo: /assets/images/logo.png
 favicon: true
+
+sidebar:
+  
+  - name: Accueil
+    icon: <i class="fa-solid fa-house"></i>
+    link: /
+
+
+  - name: Cours
+    icon: <i class="fa-solid fa-book"></i>
+    link: /    
+  
+
+  - name: Travaux Pratiques
+    icon: <i class="fa-solid fa-flask"></i>
+    link: /
+
+
+  - name: Cahier de texte
+    icon: <i class="fa-solid fa-calendar"></i>
+    link: /
+    
