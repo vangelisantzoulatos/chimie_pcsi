@@ -22,15 +22,15 @@ sidebar:
     icon: <i class="fa-solid fa-circle" style="opacity:0"></i>
     link: /
 
-- name: "> Architecture de la matière"
-    icon: <i class="fa-solid fa-circle" style="opacity:0"></i>
-    link: /
-- name: "> Chimie Organique"
-    icon: <i class="fa-solid fa-circle" style="opacity:0"></i>
-    link: /
-- name: "> Solutions Aqueuses"
-    icon: <i class="fa-solid fa-circle" style="opacity:0"></i>
-    link: /
+  - name: "> Architecture de la matière"
+      icon: <i class="fa-solid fa-circle" style="opacity:0"></i>
+      link: /
+  - name: "> Chimie Organique"
+      icon: <i class="fa-solid fa-circle" style="opacity:0"></i>
+      link: /
+  - name: "> Solutions Aqueuses"
+      icon: <i class="fa-solid fa-circle" style="opacity:0"></i>
+      link: /
 
   - name: Travaux Pratiques
     icon: <i class="fa-solid fa-flask"></i>
