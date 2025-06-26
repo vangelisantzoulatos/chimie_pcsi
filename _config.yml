@@ -2,9 +2,6 @@ title: Chimie PCSI Faidherbe
 remote_theme: BDHU/minimalist
 plugins:
   - jekyll-remote-theme
-  - jekyll-sitemap
-url: "https://vangelisantzoulatos.github.io"
-baseurl: "/chimie_pcsi"
 color-scheme: dark
 
 logo: /assets/images/logo.png
