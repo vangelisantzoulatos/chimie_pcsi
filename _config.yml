@@ -19,11 +19,11 @@ sidebar:
 
   - name: "> Transformations de la matière"
     icon: <i class="fa-solid fa-circle" style="opacity:0"></i>
-    link: /
+    link: /chimie_pcsi/TM/
 
   - name: "> Architecture de la matière"
     icon: <i class="fa-solid fa-circle" style="opacity:0"></i>
-    link: /
+    link: /chimie_pcsi/
 
   - name: "> Chimie Organique"
     icon: <i class="fa-solid fa-circle" style="opacity:0"></i>
