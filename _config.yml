@@ -11,7 +11,7 @@ sidebar:
   
   - name: Accueil
     icon: <i class="fa-solid fa-house"></i>
-    link: /
+    link: /chimie_pcsi/
 
   - name: Cours & Exercices
     icon: <i class="fa-solid fa-book"></i>
