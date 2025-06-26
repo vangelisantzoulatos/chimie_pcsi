@@ -8,8 +8,7 @@ permalink: /TM/
 
 ---
 
-**TM1** --- Décrire et modéliser une transformation chimique
-
+**TM1** --- Décrire et modéliser une transformation chimique  
 cours | fiche | classiques | TD | TD_corrigé | questions | autotest 
 
 ---
