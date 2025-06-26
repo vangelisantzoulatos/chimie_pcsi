@@ -18,8 +18,8 @@ Chaque polycopié est à **lire avant le cours**, en prenant le temps de compren
 
 - 📘 **Lire les polys en avance**, en soulignant les zones floues.
 - 🧠 **Se concentrer sur les idées fondamentales**, pas mémoriser des formules.
-- ❓ **Poser vos éventuelles questions**  sur le document prévu à cet effet (google doc).
-- ✍️ **En classe** : un cahier et un stylo suffisent ! (c'est même préconisé) Vous n'avez alors pas besoin du poly, même s'il est autorisé. C'est un moment **actif** de l'apprentissage, où on réfléchit ensemble, on questionne le cours, on apprend par **l'action**, la pratique.
+- ❓ **Poser vos éventuelles questions**  sur le document "google docs" prévu à cet effet.
+- ✍️ **En classe** : un cahier et un stylo suffisent ! C'est un moment **actif** où on travaille le cours par la **pratique**, c'est déjà une phase d'entraînement.
 - 🔁 **Revenir aux textes** pour consolider après les séances.
 
 ---
