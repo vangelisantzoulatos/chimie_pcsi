@@ -9,7 +9,7 @@ permalink: /TM/
 ---
 
 **TM1** --- Décrire et modéliser une transformation chimique  
-[cours](/chimie_pcsi/cours/transformations_matiere/TM1/TM1_Cours.pdf) | [fiche](/chimie_pcsi/cours/transformations_matiere/TM1/TM1_Fiche.pdf) | classiques | TD | TD_corrigé | questions | autotest 
+<a href="/chimie_pcsi/cours/transformations_matiere/TM1/TM1_Cours.pdf" download>cours</a> | [fiche](/chimie_pcsi/cours/transformations_matiere/TM1/TM1_Fiche.pdf) | classiques | TD | TD_corrigé | questions | autotest 
 
 ---
 
