@@ -23,20 +23,20 @@ sidebar:
 
   - name: "> Architecture de la matière"
     icon: <i class="fa-solid fa-circle" style="opacity:0"></i>
-    link: /chimie_pcsi/
+    link: /chimie_pcsi/AM/
 
   - name: "> Chimie Organique"
     icon: <i class="fa-solid fa-circle" style="opacity:0"></i>
-    link: /
+    link: /chimie_pcsi/CO/
       
   - name: "> Solutions Aqueuses"
     icon: <i class="fa-solid fa-circle" style="opacity:0"></i>
-    link: /
+    link: /chimie_pcsi/SA/
 
   - name: Travaux Pratiques
     icon: <i class="fa-solid fa-flask"></i>
-    link: /
+    link: /chimie_pcsi/TP/
 
   - name: Cahier de texte
     icon: <i class="fa-solid fa-calendar"></i>
-    link: /
+    link: /chimie_pcsi/CT/
