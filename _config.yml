@@ -12,11 +12,13 @@ sidebar:
   - name: Accueil
     icon: <i class="fa-solid fa-house"></i>
     link: /
+    class: nav-section
 
   - name: Cours & Exercices
     icon: <i class="fa-solid fa-book"></i>
     link: ""    
-  
+    class: nav-section
+
   - name: "> Transformations de la matière"
     icon: <i class="fa-solid fa-circle" style="opacity:0"></i>
     link: /
@@ -36,9 +38,9 @@ sidebar:
   - name: Travaux Pratiques
     icon: <i class="fa-solid fa-flask"></i>
     link: /
-
+    class: nav-section
 
   - name: Cahier de texte
     icon: <i class="fa-solid fa-calendar"></i>
     link: /
-    
+    class: nav-section
