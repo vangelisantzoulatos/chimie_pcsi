@@ -47,7 +47,18 @@ body {
   display: none !important;
 }
 
-.sidebar ul li.nav-section {
+
+/* Rubrique non cliquable : Cours & Exercices */
+.sidebar ul li:nth-child(2) {
+  font-weight: bold;
+  pointer-events: none;
+  cursor: default;
+}
+
+/* Rubriques principales cliquables : Accueil, Travaux Pratiques, Cahier de texte */
+.sidebar ul li:nth-child(1),
+.sidebar ul li:nth-child(7),
+.sidebar ul li:nth-child(8) {
   font-weight: bold;
 }
 
