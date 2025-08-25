@@ -9,6 +9,6 @@ permalink: /TP/
 ---
 
 **TP1** --- Degré acétique d'un vinaigre  
-<a href="/chimie_pcsi/cours/transformations_matiere/TM1/TM1_Cours.pdf" download>Enoncé</a> | <a href="/chimie_pcsi/cours/transformations_matiere/TM1/TM1_Fiche.pdf" download>fiche</a> | Document à rendre | Vos résultats | Ensemble des résultats  
+<a href="/chimie_pcsi/TP/vinaigre.pdf" download>énoncé</a> | <a href="https://docs.google.com/document/d/1qm0TP5S2syP8UQ3QBxdjzWJRX0VC7_YHSAIzbMDU3aw/edit?usp=drive_link" download>document à rendre</a> | vos résultats | ensemble des résultats  
 
 ---
