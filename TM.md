@@ -9,17 +9,17 @@ permalink: /TM/
 ---
 
 **TM1** --- Décrire et modéliser une transformation chimique  
-<a href="/chimie_pcsi/cours/transformations_matiere/TM1/TM1_Cours.pdf" download>cours</a> | <a href="/chimie_pcsi/cours/transformations_matiere/TM1/TM1_Fiche.pdf" download>fiche</a> | classiques | TD | TD_corrigé | questions | autotest 
+<a href="/chimie_pcsi/cours/transformations_matiere/TM1/TM1_Cours.pdf" download>cours</a> | <a href="/chimie_pcsi/cours/transformations_matiere/TM1/TM1_Fiche.pdf" download>fiche</a> | <a href="/chimie_pcsi/cours/transformations_matiere/TM1/TM1_Classiques.pdf" download>classiques</a> | <a href="/chimie_pcsi/cours/transformations_matiere/TM1/TM1_td.pdf" download>TD</a> | <a href="/chimie_pcsi/cours/transformations_matiere/TM1/TM1_td-corr.pdf" download>TD_corrigé</a> | questions | autotest 
 
 ---
 
 
 **TM2** --- Equilibres chimiques  
-<a href="/chimie_pcsi/cours/transformations_matiere/TM2/TM2_Cours.pdf" download>cours</a> | <a href="/chimie_pcsi/cours/transformations_matiere/TM2/TM2_Fiche.pdf" download>fiche</a> | classiques | TD | TD_corrigé | questions | autotest
+<a href="/chimie_pcsi/cours/transformations_matiere/TM2/TM2_Cours.pdf" download>cours</a> | <a href="/chimie_pcsi/cours/transformations_matiere/TM2/TM2_Fiche.pdf" download>fiche</a> | <a href="/chimie_pcsi/cours/transformations_matiere/TM2/TM2_Classiques.pdf" download>classiques</a> | <a href="/chimie_pcsi/cours/transformations_matiere/TM2/TM2_td.pdf" download>TD</a> | <a href="/chimie_pcsi/cours/transformations_matiere/TM2/TM2_td-corr.pdf" download>TD_corrigé</a> | questions | autotest
 
 ---
 
 **TM3** --- Cinétique chimique macroscopique  
-<a href="/chimie_pcsi/cours/transformations_matiere/TM3/TM3_Cours.pdf" download>cours</a> | <a href="/chimie_pcsi/cours/transformations_matiere/TM3/TM3_Fiche.pdf" download>fiche</a> | classiques | TD | TD_corrigé | questions | autotest
+<a href="/chimie_pcsi/cours/transformations_matiere/TM3/TM3_Cours.pdf" download>cours</a> | <a href="/chimie_pcsi/cours/transformations_matiere/TM3/TM3_Fiche.pdf" download>fiche</a> | <a href="/chimie_pcsi/cours/transformations_matiere/TM3/TM3_Classiques.pdf" download>classiques</a> | <a href="/chimie_pcsi/cours/transformations_matiere/TM3/TM3_td.pdf" download>TD</a> | <a href="/chimie_pcsi/cours/transformations_matiere/TM3/TM3_td-corr.pdf" download>TD_corrigé</a> | questions | autotest
 
 ---
