@@ -35,6 +35,7 @@ permalink: /CT/
     cours:    { googleCalendarId: "chimie.pcsi.faidherbe@gmail.com",                                  color: "#039BE5" },
     tp:       { googleCalendarId: "79e377f758a6d572bbbb60a46fcf4340cb9a6a74440a918ba26751f841129545@group.calendar.google.com", color: "#E53935" },
     vacances: { googleCalendarId: "2be541bbe76056169eef32cb5044ccd55fd02f9eab8d8e78e6107923f6c2b97a@group.calendar.google.com", color: "#F6BF26" },
+    feries:   { googleCalendarId: "fr.french#holiday@group.v.calendar.google.com", color: "#9E9E9E" } // <- Jours fériés
   };
 
   // --- Thème sombre (simple) ---
