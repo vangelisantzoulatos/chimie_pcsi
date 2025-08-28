@@ -12,6 +12,8 @@ Cette plateforme réunit l’ensemble des ressources du cours de chimie PCSI : p
 Elle accompagne une démarche de travail **progressive, structurée, rigoureuse**.  
 Chaque polycopié est à **lire avant le cours**, en prenant le temps de comprendre, annoter, interroger. Le cours en classe **n’est pas une répétition**, mais un approfondissement, une mise en perspective, une construction.
 
+**Pour vos questions** : `chimie.pcsi.faidherbe@gmail.com`
+
 ---
 
 ## Comment travailler ?
