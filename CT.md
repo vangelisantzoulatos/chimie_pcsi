@@ -26,7 +26,7 @@ permalink: /CT/
 <div id="calendar" style="border:1px solid #2a2a2a;border-radius:12px;padding:8px"></div>
 
 <script>
-  const API_KEY = "TA_CLE_API";
+  const API_KEY = "AIzaSyCll9z6Ckg2r-2N4vC5SMoAoufpF4rDA_A";
 
   const calendars = {
     cours:    { googleCalendarId: "chimie.pcsi.faidherbe@gmail.com",                                  color: "#039BE5" },
