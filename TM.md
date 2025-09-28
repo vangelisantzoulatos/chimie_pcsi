@@ -24,6 +24,6 @@ permalink: /TM/
 ---
 
 **TM3** --- Cinétique chimique macroscopique  
-<a href="/chimie_pcsi/cours/transformations_matiere/TM3/TM3_Cours.pdf" download>cours</a> | <a href="/chimie_pcsi/cours/transformations_matiere/TM3/TM3_Fiche.pdf" download>fiche</a> | <a href="/chimie_pcsi/cours/transformations_matiere/TM3/TM3_Classiques.pdf" download>classiques</a> | <a href="/chimie_pcsi/cours/transformations_matiere/TM3/TM3_td.pdf" download>TD</a> | <a href="/chimie_pcsi/cours/transformations_matiere/TM3/TM3_td-corr.pdf" download>TD_corrigé</a> | questions | autotest
+<a href="/chimie_pcsi/cours/transformations_matiere/TM3/TM3_Cours.pdf" download>cours</a> | <a href="/chimie_pcsi/cours/transformations_matiere/TM3/TM3_Fiche.pdf" download>fiche</a> | <a href="/chimie_pcsi/cours/transformations_matiere/TM3/TM3_Classiques.pdf" download>classiques</a> | <a href="/chimie_pcsi/cours/transformations_matiere/TM3/TM3_td.pdf" download>TD</a> | <a href="/chimie_pcsi/cours/transformations_matiere/TM3/TM3_td-corr.pdf" download>TD_corrigé</a> | <a href="https://docs.google.com/document/d/1C6zUIaDt8GLf7Zqwacup3Oj9p2zDLfLYueRDjls8iJE/edit?usp=sharing" target="_blank">questions</a> | autotest
 
 ---
