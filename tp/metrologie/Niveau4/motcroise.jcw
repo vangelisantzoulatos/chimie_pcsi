@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jcross-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>Vangelis</dc:creator>
+    <dc:title>Retour sur le vocabulaire de la m&amp;#x00E9;trologie</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>6</version>
+
+<data>
+<title>Retour sur le vocabulaire de la m&amp;#x00E9;trologie</title>
+
+
+
+<timer><seconds>60</seconds><include-timer>0</include-timer></timer><reading>
+<include-reading>0</include-reading>
+<reading-title></reading-title>
+<reading-text></reading-text>
+
+</reading>
+
+<crossword>
+<grid><row><cell>I</cell><cell>N</cell><cell>T</cell><cell>E</cell><cell>R</cell><cell>-</cell><cell>L</cell><cell>A</cell><cell>B</cell><cell>O</cell><cell>R</cell><cell>A</cell><cell>T</cell><cell>O</cell><cell>I</cell><cell>R</cell><cell>E</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>R</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>R</cell><cell></cell><cell>I</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>E</cell><cell>C</cell><cell>A</cell><cell>R</cell><cell>T</cell><cell>-</cell><cell>T</cell><cell>Y</cell><cell>P</cell><cell>E</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>S</cell><cell></cell><cell>N</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>F</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>O</cell><cell></cell><cell>G</cell><cell>U</cell><cell>M</cell><cell></cell><cell></cell><cell>E</cell><cell>L</cell><cell>A</cell><cell>R</cell><cell>G</cell><cell>I</cell><cell>E</cell><cell></cell><cell></cell><cell>P</cell><cell></cell><cell></cell><cell></cell></row><row><cell>L</cell><cell></cell><cell>U</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>D</cell><cell></cell><cell></cell><cell></cell><cell>R</cell><cell></cell><cell></cell><cell></cell></row><row><cell>U</cell><cell></cell><cell>L</cell><cell>I</cell><cell>N</cell><cell>E</cell><cell>A</cell><cell>R</cell><cell>I</cell><cell>T</cell><cell>E</cell><cell></cell><cell>E</cell><cell>T</cell><cell>A</cell><cell>L</cell><cell>O</cell><cell>N</cell><cell></cell><cell></cell></row><row><cell>T</cell><cell></cell><cell>A</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>L</cell><cell></cell><cell></cell><cell></cell><cell>B</cell><cell></cell><cell></cell><cell></cell></row><row><cell>I</cell><cell></cell><cell>I</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>I</cell><cell></cell><cell>B</cell><cell>I</cell><cell>A</cell><cell>I</cell><cell>S</cell><cell></cell></row><row><cell>O</cell><cell></cell><cell>R</cell><cell>E</cell><cell>P</cell><cell>E</cell><cell>T</cell><cell>A</cell><cell>B</cell><cell>I</cell><cell>L</cell><cell>I</cell><cell>T</cell><cell>E</cell><cell></cell><cell></cell><cell>B</cell><cell></cell><cell></cell><cell></cell></row><row><cell>N</cell><cell></cell><cell>E</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>L</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>E</cell><cell></cell><cell></cell><cell></cell><cell>I</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell>J</cell><cell>U</cell><cell>S</cell><cell>T</cell><cell>E</cell><cell>S</cell><cell>S</cell><cell>E</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>L</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>A</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>I</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>T</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>S</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell>C</cell><cell>O</cell><cell>M</cell><cell>P</cell><cell>O</cell><cell>S</cell><cell>E</cell><cell>E</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>T</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>I</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>E</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>V</cell><cell>A</cell><cell>R</cell><cell>I</cell><cell>A</cell><cell>N</cell><cell>C</cell><cell>E</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>E</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></grid>
+
+<clues><item><word>INTER-LABORATOIRE</word><def>Se dit &amp;#x00E0; propos d&apos;une &amp;#x00E9;tude statistique r&amp;#x00E9;alis&amp;#x00E9;e &amp;#x00E0; partir de plusieurs laboratoires.</def></item><item><word>ECART-TYPE</word><def>Caract&amp;#x00E9;rise la dispersion d&apos;une population.</def></item><item><word>GUM</word><def>La m&amp;#x00E9;thode de r&amp;#x00E9;f&amp;#x00E9;rence pour l&apos;&amp;#x00E9;valuation des incertitudes.</def></item><item><word>ELARGIE</word><def>Se dit d&apos;une incertitude obtenue &amp;#x00E0; partir d&apos;une incertitude-type et permettant de d&amp;#x00E9;terminer un niveau de confiance.</def></item><item><word>LINEARITE</word><def>Ce qui est en d&amp;#x00E9;faut quand une balance manque de justesse.</def></item><item><word>ETALON</word><def>Substance de r&amp;#x00E9;f&amp;#x00E9;rence.</def></item><item><word>BIAIS</word><def>Erreur syst&amp;#x00E9;matique.</def></item><item><word>REPETABILITE</word><def>Fid&amp;#x00E9;lit&amp;#x00E9; li&amp;#x00E9;e au m&amp;#x00EA;me op&amp;#x00E9;rateur, dans un m&amp;#x00EA;me laboratoire, au m&amp;#x00EA;me &amp;#x00E9;chantillon, et sur un court laps de temps.</def></item><item><word>JUSTESSE</word><def>Capacit&amp;#x00E9; d&apos;une m&amp;#x00E9;thode &amp;#x00E0; donner un r&amp;#x00E9;sultat proche de la &quot;valeur vraie&quot;.</def></item><item><word>COMPOSEE</word><def>Se dit d&apos;une incertitude d&amp;#x00E9;duite de plusieurs incertitudes individuelles et d&apos;une fonction de mesure.</def></item><item><word>VARIANCE</word><def>Ecart-type au carr&amp;#x00E9;.</def></item><item><word>TRIANGULAIRE</word><def>Loi de r&amp;#x00E9;partition dont la moyenne est probable.</def></item><item><word>RESOLUTION</word><def>Plus petit &amp;#x00E9;cart de valeurs qu&apos;un instrument permet d&apos;&amp;#x00E9;valuer sans ambigu&amp;#x00EF;t&amp;#x00E9;.</def></item><item><word>FIDELITE</word><def>Elle est bonne si les erreurs al&amp;#x00E9;atoires sont faibles.</def></item><item><word>PROBABILISTE</word><def>L&apos;&amp;#x00E9;valuation de type B met en oeuvre une approche de ce type.</def></item><item><word>ALEATOIRE</word><def>D&amp;#x00E9;signe une erreur entra&amp;#x00EE;nant un d&amp;#x00E9;faut de r&amp;#x00E9;p&amp;#x00E9;tabilit&amp;#x00E9;, ou de reproductibilit&amp;#x00E9;.</def></item><item><word>ALEATOIRE</word><def>D&amp;#x00E9;signe une erreur entra&amp;#x00EE;nant un d&amp;#x00E9;faut de r&amp;#x00E9;p&amp;#x00E9;tabilit&amp;#x00E9;, ou de reproductibilit&amp;#x00E9;.</def></item><item><word>ALEATOIRE</word><def>D&amp;#x00E9;signe une erreur entra&amp;#x00EE;nant un d&amp;#x00E9;faut de r&amp;#x00E9;p&amp;#x00E9;tabilit&amp;#x00E9;, ou de reproductibilit&amp;#x00E9;.</def></item></clues>
+</crossword>
+</data>
+
+<hotpot-config-file>
+<jcross>
+<exercise-subtitle>Mots-crois&amp;#x00E9;s</exercise-subtitle>
+<instructions>Compl&amp;#x00E9;tez la grille. Cliquez ensuite sur le bouton &quot;Correction&quot;.  Vous pouvez utiliser le bouton &quot;Aide&quot; pour obtenir une lettre indice. Cliquez sur un num&amp;#x00E9;ro dans la grille pour voir la d&amp;#x00E9;finition correspondante. Vous pouvez cliquer  &quot;Indice&quot; pour obtenir un indice. Vous perdrez des points si vous utilisez les fonctions &quot;Aide&quot; ou &quot;Indice&quot;!</instructions>
+<guess-correct>Correct! Bravo.</guess-correct>
+<guess-incorrect>Vous avez commis une erreur.</guess-incorrect>
+<clues-across>D&amp;#x00E9;finitions horizontales :</clues-across>
+<clues-down>D&amp;#x00E9;finitions verticales :</clues-down>
+<next-correct-letter>Lettre correcte ajout&amp;#x00E9;e :</next-correct-letter>
+<include-keypad>0</include-keypad>
+<include-clue-list>0</include-clue-list>
+<enter-caption>Tapez votre r&amp;#x00E9;ponse</enter-caption>
+<include-hint>1</include-hint>
+<case-sensitive>0</case-sensitive>
+<next-ex-url>nextpage.htm</next-ex-url>
+<send-email>0</send-email>
+<separate-javascript-file>0</separate-javascript-file>
+</jcross>
+
+<global>
+<your-score-is>Votre score est de:</your-score-is>
+<check-caption>Correction</check-caption>
+<ok-caption>OK</ok-caption>
+<hint-caption>Aide</hint-caption>
+<keypad-characters>&amp;#x00E0; &amp;#x00E7; &amp;#x00E9; &amp;#x00EA; &amp;#x00E8; &amp;#x00EB; &amp;#x00F9; &amp;#x00F4; &amp;#x00C0; &amp;#x00C7; &amp;#x00C9; &amp;#x00CA;</keypad-characters>
+<process-for-rtl>0</process-for-rtl>
+<include-scorm-12>0</include-scorm-12>
+<next-ex-caption>=&amp;#x003E;</next-ex-caption>
+<back-caption>&amp;#x003C;=</back-caption>
+<contents-caption>Sommaire</contents-caption>
+<include-next-ex>0</include-next-ex>
+<include-contents>0</include-contents>
+<include-back>0</include-back>
+<contents-url>index.htm</contents-url>
+<graphic-url>background.gif</graphic-url>
+<font-face>Geneva,Arial</font-face>
+<font-size>small</font-size>
+<page-bg-color>#FFFFFF</page-bg-color>
+<title-color>#000066</title-color>
+<ex-bg-color>#DDDDFF</ex-bg-color>
+<text-color>#000066</text-color>
+<link-color>#0000ff</link-color>
+<vlink-color>#0000cc</vlink-color>
+<nav-bar-color>#004080</nav-bar-color>
+<formmail-url>http://your.server.address/cgi-bin/FormMail.pl</formmail-url>
+<email>you@yourplace.com</email>
+<name-please>Please enter your name:</name-please>
+<user-string-1>um</user-string-1>
+<user-string-2>dois</user-string-2>
+<user-string-3>tr&amp;#x00EA;s</user-string-3>
+<header-code></header-code>
+</global>
+</hotpot-config-file>
+</hotpot-jcross-file>

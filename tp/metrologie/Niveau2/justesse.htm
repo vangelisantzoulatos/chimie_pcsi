@@ -1,0 +1,1007 @@
+<?xml version="1.0"?>
+       <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "xhtml11.dtd">
+       <html xmlns="http://www.w3.org/1999/xhtml"
+             xml:lang="en"><head><meta name="author" content="Created with Hot Potatoes by Half-Baked Software, registered to Vangelis."></meta><meta name="keywords" content="Hot Potatoes, Hot Potatoes, Half-Baked Software, Windows, University of Victoria"></meta>
+
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<meta name="DC:Creator" content="Vangelis" />
+<meta name="DC:Title" content="Justesse de mesure" />
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+
+<title>
+Justesse de mesure
+</title>
+
+<!-- Made with executable version 6.3 Release 0 Build 5 -->
+
+<!-- The following insertion allows you to add your own code directly to this head tag from the configuration screen -->
+
+<link rel="stylesheet" type="text/css" href="../Zzz-Bidouillage/ext2.css" />
+
+<link rel="stylesheet" type="text/css" href="../Zzz-Bidouillage/ext2.css" />
+
+<script type="text/javascript">
+
+//<![CDATA[
+
+<!--
+
+
+
+
+function Client(){
+//if not a DOM browser, hopeless
+	this.min = false; if (document.getElementById){this.min = true;};
+
+	this.ua = navigator.userAgent;
+	this.name = navigator.appName;
+	this.ver = navigator.appVersion;  
+
+//Get data about the browser
+	this.mac = (this.ver.indexOf('Mac') != -1);
+	this.win = (this.ver.indexOf('Windows') != -1);
+
+//Look for Gecko
+	this.gecko = (this.ua.indexOf('Gecko') > 1);
+	if (this.gecko){
+		this.geckoVer = parseInt(this.ua.substring(this.ua.indexOf('Gecko')+6, this.ua.length));
+//		if (this.geckoVer < 20020000){this.min = false;}
+	}
+	
+//Look for Firebird
+	this.firebird = (this.ua.indexOf('Firebird') > 1);
+	
+//Look for Safari
+	this.safari = (this.ua.indexOf('Safari') > 1);
+	if (this.safari){
+		this.gecko = false;
+	}
+	
+//Look for IE
+	this.ie = (this.ua.indexOf('MSIE') > 0);
+	if (this.ie){
+		this.ieVer = parseFloat(this.ua.substring(this.ua.indexOf('MSIE')+5, this.ua.length));
+		if (this.ieVer < 5.5){this.min = false;}
+	}
+	
+//Look for Opera
+	this.opera = (this.ua.indexOf('Opera') > 0);
+	if (this.opera){
+		this.operaVer = parseFloat(this.ua.substring(this.ua.indexOf('Opera')+6, this.ua.length));
+		if (this.operaVer < 7.04){this.min = false;}
+	}
+	if (this.min == false){
+//		alert('Your browser may not be able to handle this page.');
+	}
+	
+//Special case for the horrible ie5mac
+	this.ie5mac = (this.ie&&this.mac&&(this.ieVer<6));
+}
+
+var C = new Client();
+
+//for (prop in C){
+//	alert(prop + ': ' + C[prop]);
+//}
+
+
+
+//CODE FOR HANDLING NAV BUTTONS AND FUNCTION BUTTONS
+
+//[strNavBarJS]
+function NavBtnOver(Btn){
+	if (Btn.className != 'NavButtonDown'){Btn.className = 'NavButtonUp';}
+}
+
+function NavBtnOut(Btn){
+	Btn.className = 'NavButton';
+}
+
+function NavBtnDown(Btn){
+	Btn.className = 'NavButtonDown';
+}
+//[/strNavBarJS]
+
+function FuncBtnOver(Btn){
+	if (Btn.className != 'FuncButtonDown'){Btn.className = 'FuncButtonUp';}
+}
+
+function FuncBtnOut(Btn){
+	Btn.className = 'FuncButton';
+}
+
+function FuncBtnDown(Btn){
+	Btn.className = 'FuncButtonDown';
+}
+
+function FocusAButton(){
+	if (document.getElementById('CheckButton1') != null){
+		document.getElementById('CheckButton1').focus();
+	}
+	else{
+		if (document.getElementById('CheckButton2') != null){
+			document.getElementById('CheckButton2').focus();
+		}
+		else{
+			document.getElementsByTagName('button')[0].focus();
+		}
+	}
+}
+
+
+
+
+//CODE FOR HANDLING DISPLAY OF POPUP FEEDBACK BOX
+
+var topZ = 1000;
+
+function ShowMessage(Feedback){
+	var Output = Feedback + '<br /><br />';
+	document.getElementById('FeedbackContent').innerHTML = Output;
+	var FDiv = document.getElementById('FeedbackDiv');
+	topZ++;
+	FDiv.style.zIndex = topZ;
+	FDiv.style.top = TopSettingWithScrollOffset(30) + 'px';
+
+	FDiv.style.display = 'block';
+
+	ShowElements(false, 'input');
+	ShowElements(false, 'select');
+	ShowElements(false, 'object');
+	ShowElements(true, 'object', 'FeedbackContent');
+
+//Focus the OK button
+	setTimeout("document.getElementById('FeedbackOKButton').focus()", 50);
+	
+//
+//	RefreshImages();
+//
+}
+
+function ShowElements(Show, TagName, ContainerToReverse){
+// added third argument to allow objects in the feedback box to appear
+//IE bug -- hide all the form elements that will show through the popup
+//FF on Mac bug : doesn't redisplay objects whose visibility is set to visible
+//unless the object's display property is changed
+
+	//get container object (by Id passed in, or use document otherwise)
+	TopNode = document.getElementById(ContainerToReverse);
+	var Els;
+	if (TopNode != null) {
+		Els = TopNode.getElementsByTagName(TagName);
+	} else {
+		Els = document.getElementsByTagName(TagName);
+	}
+
+	for (var i=0; i<Els.length; i++){
+		if (TagName == "object") {
+			//manipulate object elements in all browsers
+			if (Show == true){
+				Els[i].style.visibility = 'visible';
+				//get Mac FireFox to manipulate display, to force screen redraw
+				if (C.mac && C.gecko) {Els[i].style.display = '';}
+			}
+			else{
+				Els[i].style.visibility = 'hidden';
+				if (C.mac && C.gecko) {Els[i].style.display = 'none';}
+			}
+		} 
+		else {
+			// tagName is either input or select (that is, Form Elements)
+			// ie6 has a problem with Form elements, so manipulate those
+			if (C.ie) {
+				if (C.ieVer < 7) {
+					if (Show == true){
+						Els[i].style.visibility = 'visible';
+					}
+					else{
+						Els[i].style.visibility = 'hidden';
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+function HideFeedback(){
+	document.getElementById('FeedbackDiv').style.display = 'none';
+	ShowElements(true, 'input');
+	ShowElements(true, 'select');
+	ShowElements(true, 'object');
+	if (Finished == true){
+		Finish();
+	}
+}
+
+
+//GENERAL UTILITY FUNCTIONS AND VARIABLES
+
+//PAGE DIMENSION FUNCTIONS
+function PageDim(){
+//Get the page width and height
+	this.W = 600;
+	this.H = 400;
+	this.W = document.getElementsByTagName('body')[0].clientWidth;
+	this.H = document.getElementsByTagName('body')[0].clientHeight;
+}
+
+var pg = null;
+
+function GetPageXY(El) {
+	var XY = {x: 0, y: 0};
+	while(El){
+		XY.x += El.offsetLeft;
+		XY.y += El.offsetTop;
+		El = El.offsetParent;
+	}
+	return XY;
+}
+
+function GetScrollTop(){
+	if (typeof(window.pageYOffset) == 'number'){
+		return window.pageYOffset;
+	}
+	else{
+		if ((document.body)&&(document.body.scrollTop)){
+			return document.body.scrollTop;
+		}
+		else{
+			if ((document.documentElement)&&(document.documentElement.scrollTop)){
+				return document.documentElement.scrollTop;
+			}
+			else{
+				return 0;
+			}
+		}
+	}
+}
+
+function GetViewportHeight(){
+	if (typeof window.innerHeight != 'undefined'){
+		return window.innerHeight;
+	}
+	else{
+		if (((typeof document.documentElement != 'undefined')&&(typeof document.documentElement.clientHeight !=
+     'undefined'))&&(document.documentElement.clientHeight != 0)){
+			return document.documentElement.clientHeight;
+		}
+		else{
+			return document.getElementsByTagName('body')[0].clientHeight;
+		}
+	}
+}
+
+function TopSettingWithScrollOffset(TopPercent){
+	var T = Math.floor(GetViewportHeight() * (TopPercent/100));
+	return GetScrollTop() + T; 
+}
+
+//CODE FOR AVOIDING LOSS OF DATA WHEN BACKSPACE KEY INVOKES history.back()
+var InTextBox = false;
+
+function SuppressBackspace(e){ 
+	if (InTextBox == true){return;}
+	if (C.ie) {
+		thisKey = window.event.keyCode;
+	}
+	else {
+		thisKey = e.keyCode;
+	}
+
+	var Suppress = false;
+
+	if (thisKey == 8) {
+		Suppress = true;
+	}
+
+	if (Suppress == true){
+		if (C.ie){
+			window.event.returnValue = false;	
+			window.event.cancelBubble = true;
+		}
+		else{
+			e.preventDefault();
+		}
+	}
+}
+
+if (C.ie){
+	document.attachEvent('onkeydown',SuppressBackspace);
+	window.attachEvent('onkeydown',SuppressBackspace);
+}
+else{
+	if (window.addEventListener){
+		window.addEventListener('keypress',SuppressBackspace,false);
+	}
+}
+
+function ReduceItems(InArray, ReduceToSize){
+	var ItemToDump=0;
+	var j=0;
+	while (InArray.length > ReduceToSize){
+		ItemToDump = Math.floor(InArray.length*Math.random());
+		InArray.splice(ItemToDump, 1);
+	}
+}
+
+function Shuffle(InArray){
+	var Num;
+	var Temp = new Array();
+	var Len = InArray.length;
+
+	var j = Len;
+
+	for (var i=0; i<Len; i++){
+		Temp[i] = InArray[i];
+	}
+
+	for (i=0; i<Len; i++){
+		Num = Math.floor(j  *  Math.random());
+		InArray[i] = Temp[Num];
+
+		for (var k=Num; k < (j-1); k++) {
+			Temp[k] = Temp[k+1];
+		}
+		j--;
+	}
+	return InArray;
+}
+
+function WriteToInstructions(Feedback) {
+	document.getElementById('InstructionsDiv').innerHTML = Feedback;
+
+	RefreshImages();
+
+}
+
+
+
+Imgs = new Array();
+
+function PreloadImages(){
+	var a = PreloadImages.arguments;
+	for (var i=0; i<a.length; i++){
+		Imgs[i] = new Image();
+		Imgs[i].src = a[i];
+	}
+}
+
+function RefreshImages(){
+	for (var i=0; i<document.images.length; i++){
+		if (document.images[i].name.substring(0,6) != 'NavBar'){
+			document.images[i].src = document.images[i].src;
+		}
+	}
+}
+
+
+function EscapeDoubleQuotes(InString){
+	return InString.replace(/"/g, '&quot;')
+}
+
+function TrimString(InString){
+        var x = 0;
+
+        if (InString.length != 0) {
+                while ((InString.charAt(InString.length - 1) == '\u0020') || (InString.charAt(InString.length - 1) == '\u000A') || (InString.charAt(InString.length - 1) == '\u000D')){
+                        InString = InString.substring(0, InString.length - 1)
+                }
+
+                while ((InString.charAt(0) == '\u0020') || (InString.charAt(0) == '\u000A') || (InString.charAt(0) == '\u000D')){
+                        InString = InString.substring(1, InString.length)
+                }
+
+                while (InString.indexOf('  ') != -1) {
+                        x = InString.indexOf('  ')
+                        InString = InString.substring(0, x) + InString.substring(x+1, InString.length)
+                 }
+
+                return InString;
+        }
+
+        else {
+                return '';
+        }
+}
+
+function FindLongest(InArray){
+	if (InArray.length < 1){return -1;}
+
+	var Longest = 0;
+	for (var i=1; i<InArray.length; i++){
+		if (InArray[i].length > InArray[Longest].length){
+			Longest = i;
+		}
+	}
+	return Longest;
+}
+
+//UNICODE CHARACTER FUNCTIONS
+function IsCombiningDiacritic(CharNum){
+	var Result = (((CharNum >= 0x0300)&&(CharNum <= 0x370))||((CharNum >= 0x20d0)&&(CharNum <= 0x20ff)));
+	Result = Result || (((CharNum >= 0x3099)&&(CharNum <= 0x309a))||((CharNum >= 0xfe20)&&(CharNum <= 0xfe23)));
+	return Result;
+}
+
+function IsCJK(CharNum){
+	return ((CharNum >= 0x3000)&&(CharNum < 0xd800));
+}
+
+//SETUP FUNCTIONS
+//BROWSER WILL REFILL TEXT BOXES FROM CACHE IF NOT PREVENTED
+function ClearTextBoxes(){
+	var NList = document.getElementsByTagName('input');
+	for (var i=0; i<NList.length; i++){
+		if ((NList[i].id.indexOf('Guess') > -1)||(NList[i].id.indexOf('Gap') > -1)){
+			NList[i].value = '';
+		}
+		if (NList[i].id.indexOf('Chk') > -1){
+			NList[i].checked = '';
+		}
+	}
+}
+
+//EXTENSION TO ARRAY OBJECT
+function Array_IndexOf(Input){
+	var Result = -1;
+	for (var i=0; i<this.length; i++){
+		if (this[i] == Input){
+			Result = i;
+		}
+	}
+	return Result;
+}
+Array.prototype.indexOf = Array_IndexOf;
+
+//IE HAS RENDERING BUG WITH BOTTOM NAVBAR
+function RemoveBottomNavBarForIE(){
+	if ((C.ie)&&(document.getElementById('Reading') != null)){
+		if (document.getElementById('BottomNavBar') != null){
+			document.getElementById('TheBody').removeChild(document.getElementById('BottomNavBar'));
+		}
+	}
+}
+
+
+
+
+//HOTPOTNET-RELATED CODE
+
+var HPNStartTime = (new Date()).getTime();
+var SubmissionTimeout = 30000;
+var Detail = ''; //Global that is used to submit tracking data
+
+function Finish(){
+//If there's a form, fill it out and submit it
+	if (document.store != null){
+		Frm = document.store;
+		Frm.starttime.value = HPNStartTime;
+		Frm.endtime.value = (new Date()).getTime();
+		Frm.mark.value = Score;
+		Frm.detail.value = Detail;
+		Frm.submit();
+	}
+}
+
+
+
+
+
+//JCLOZE CORE JAVASCRIPT CODE
+
+function ItemState(){
+	this.ClueGiven = false;
+	this.HintsAndChecks = 0;
+	this.MatchedAnswerLength = 0;
+	this.ItemScore = 0;
+	this.AnsweredCorrectly = false;
+	this.Guesses = new Array();
+	return this;
+}
+
+var Feedback = '';
+var Correct = 'Bravo! Bien jou&#x00E9;.';
+var Incorrect = 'Une partie de la r&#x00E9;ponse est correcte. Les erreurs ont &#x00E9;t&#x00E9; effac&#x00E9;es.'; 
+var GiveHint = 'La lettre suivante a &#x00E9;t&#x00E9; ajout&#x00E9;e.';
+var CaseSensitive = false;
+var YourScoreIs = 'Votre score est de:';
+var Finished = false;
+var Locked = false;
+var Score = 0;
+var CurrentWord = 0;
+var Guesses = '';
+var TimeOver = false;
+
+I = new Array();
+
+I[0] = new Array();
+I[0][1] = new Array();
+I[0][1][0] = new Array();
+I[0][1][0][0] = '\u0031\u002C\u0031\u0033\u0030';
+I[0][2]='';
+
+I[1] = new Array();
+I[1][1] = new Array();
+I[1][1][0] = new Array();
+I[1][1][0][0] = '\u0030\u002C\u0031\u0032\u0037';
+I[1][2]='';
+
+I[2] = new Array();
+I[2][1] = new Array();
+I[2][1][0] = new Array();
+I[2][1][0][0] = '\u0030\u002C\u0031\u0032\u0037';
+I[2][2]='';
+
+I[3] = new Array();
+I[3][1] = new Array();
+I[3][1][0] = new Array();
+I[3][1][0][0] = '\u0030\u002C\u0031\u0032\u0037';
+I[3][2]='';
+
+I[4] = new Array();
+I[4][1] = new Array();
+I[4][1][0] = new Array();
+I[4][1][0][0] = '\u0030\u002C\u0031\u0032\u0037';
+I[4][2]='';
+
+I[5] = new Array();
+I[5][1] = new Array();
+I[5][1][0] = new Array();
+I[5][1][0][0] = '\u0030\u002C\u0031\u0032\u0037';
+I[5][2]='';
+
+I[6] = new Array();
+I[6][1] = new Array();
+I[6][1][0] = new Array();
+I[6][1][0][0] = '\u002D\u0030\u002C\u0030\u0031\u0031';
+I[6][2]='';
+
+I[7] = new Array();
+I[7][1] = new Array();
+I[7][1][0] = new Array();
+I[7][1][0][0] = '\u0030\u002C\u0030\u0030\u0033';
+I[7][2]='';
+
+I[8] = new Array();
+I[8][1] = new Array();
+I[8][1][0] = new Array();
+I[8][1][0][0] = '\u0030\u002C\u0030\u0032\u0032';
+I[8][2]='';
+
+I[9] = new Array();
+I[9][1] = new Array();
+I[9][1][0] = new Array();
+I[9][1][0][0] = '\u002D\u0030\u002C\u0030\u0031\u0030';
+I[9][2]='';
+
+I[10] = new Array();
+I[10][1] = new Array();
+I[10][1][0] = new Array();
+I[10][1][0][0] = '\u002D\u0030\u002C\u0030\u0030\u0035';
+I[10][2]='';
+
+
+State = new Array();
+
+function StartUp(){
+	RemoveBottomNavBarForIE();
+//Show a keypad if there is one	(added bugfix for 6.0.4.12)
+	if (document.getElementById('CharacterKeypad') != null){
+		document.getElementById('CharacterKeypad').style.display = 'block';
+	}
+	
+
+
+
+
+
+	PreloadImages('Medias/Juliette.jpg','Medias/etalcont.jpg','Medias/biais.jpg','Medias/biaisrel.jpg');
+
+
+	var i = 0;
+
+	State.length = 0;
+	for (i=0; i<I.length; i++){
+		State[i] = new ItemState();
+	}
+	
+	ClearTextBoxes();
+	
+
+
+}
+
+function ShowClue(ItemNum){
+	if (Locked == true){return;}
+	State[ItemNum].ClueGiven = true;
+	ShowMessage(I[ItemNum][2]);
+}
+
+function SaveCurrentAnswers(){
+	var Ans = '';
+	for (var i=0; i<I.length; i++){
+		Ans = GetGapValue(i);
+		if ((Ans.length > 0)&&(Ans != State[i].Guesses[State[i].Guesses.length-1])){
+			State[i].Guesses[State[i].Guesses.length] = Ans;
+		}
+	}
+}
+
+function CompileGuesses(){
+	var F = document.getElementById('store');
+	if (F != null){
+		var Temp = '<?xml version="1.0"?><hpnetresult><fields>';
+		var GapLabel = '';
+		for (var i=0; i<State.length; i++){
+			GapLabel = 'Gap ' + (i+1).toString();
+			Temp += '<field><fieldname>' + GapLabel + '</fieldname>';
+			Temp += '<fieldtype>student-responses</fieldtype><fieldlabel>' + GapLabel + '</fieldlabel>';
+			Temp += '<fieldlabelid>JClozeStudentResponses</fieldlabelid><fielddata>';
+			for (var j=0; j<State[i].Guesses.length; j++){
+				if (j>0){Temp += '| ';}
+				Temp += State[i].Guesses[j] + ' ';	
+			}	
+  		Temp += '</fielddata></field>';
+		}
+		Temp += '</fields></hpnetresult>';
+		Detail = Temp;
+	}
+}
+
+function CheckAnswers(){
+	if (Locked == true){return;}
+	SaveCurrentAnswers();
+	var AllCorrect = true;
+
+//Check each answer
+	for (var i = 0; i<I.length; i++){
+
+		if (State[i].AnsweredCorrectly == false){
+//If it's right, calculate its score
+			if (CheckAnswer(i, true) > -1){
+				var TotalChars = GetGapValue(i).length;
+				State[i].ItemScore = (TotalChars-State[i].HintsAndChecks)/TotalChars;
+				if (State[i].ClueGiven == true){State[i].ItemScore /= 2;}
+				if (State[i].ItemScore <0 ){State[i].ItemScore = 0;}
+				State[i].AnsweredCorrectly = true;
+//Drop the correct answer into the page, replacing the text box
+				SetCorrectAnswer(i, GetGapValue(i));
+			}
+			else{
+//Otherwise, increment the hints for this item, as a penalty
+				State[i].HintsAndChecks++;
+
+//then set the flag
+				AllCorrect = false;
+			}
+		}
+	}
+
+//Calculate the total score
+	var TotalScore = 0;
+	for (i=0; i<State.length; i++){
+		TotalScore += State[i].ItemScore;
+	}
+	TotalScore = Math.floor((TotalScore * 100)/I.length);
+
+//Compile the output
+	Output = '';
+
+	if (AllCorrect == true){
+		Output = Correct + '<br />';
+	}
+
+	Output += YourScoreIs + ' ' + TotalScore + '%.<br />';
+	if (AllCorrect == false){
+		Output += Incorrect;
+	}
+	ShowMessage(Output);
+	setTimeout('WriteToInstructions(Output)', 50);
+	
+	Score = TotalScore;
+	CompileGuesses();
+	
+	if ((AllCorrect == true)||(Finished == true)){
+	
+
+
+		TimeOver = true;
+		Locked = true;
+		Finished = true;
+		setTimeout('Finish()', SubmissionTimeout);
+	}
+
+}
+
+function TrackFocus(BoxNumber){
+	CurrentWord = BoxNumber;
+	InTextBox = true;
+}
+
+function LeaveGap(){
+	InTextBox = false;
+}
+
+function CheckBeginning(Guess, Answer){
+	var OutString = '';
+	var i = 0;
+	var UpperGuess = '';
+	var UpperAnswer = '';
+
+	if (CaseSensitive == false) {
+		UpperGuess = Guess.toUpperCase();
+		UpperAnswer = Answer.toUpperCase();
+	}
+	else {
+		UpperGuess = Guess;
+		UpperAnswer = Answer;
+	}
+
+	while (UpperGuess.charAt(i) == UpperAnswer.charAt(i)) {
+		OutString += Guess.charAt(i);
+		i++;
+	}
+	OutString += Answer.charAt(i);
+	return OutString;
+}
+
+function GetGapValue(GNum){
+	var RetVal = '';
+	if ((GNum<0)||(GNum>=I.length)){return RetVal;}
+	if (document.getElementById('Gap' + GNum) != null){
+		RetVal = document.getElementById('Gap' + GNum).value;
+		RetVal = TrimString(RetVal);
+	}
+	else{
+		RetVal = State[GNum].Guesses[State[GNum].Guesses.length-1];
+	}
+	return RetVal;
+}
+
+function SetGapValue(GNum, Val){
+	if ((GNum<0)||(GNum>=I.length)){return;}
+	if (document.getElementById('Gap' + GNum) != null){
+		document.getElementById('Gap' + GNum).value = Val;
+		document.getElementById('Gap' + GNum).focus();
+	}
+}
+
+function SetCorrectAnswer(GNum, Val){
+	if ((GNum<0)||(GNum>=I.length)){return;}
+	if (document.getElementById('GapSpan' + GNum) != null){
+		document.getElementById('GapSpan' + GNum).innerHTML = Val;
+	}
+}
+
+function FindCurrent() {
+	var x = 0;
+	FoundCurrent = -1;
+
+//Test the current word:
+//If its state is not set to already correct, check the word.
+	if (State[CurrentWord].AnsweredCorrectly == false){
+		if (CheckAnswer(CurrentWord, false) < 0){
+			return CurrentWord;
+		}
+	}
+	
+	x=CurrentWord + 1;
+	while (x<I.length){
+		if (State[x].AnsweredCorrectly == false){
+			if (CheckAnswer(x, false) < 0){
+				return x;
+			}
+		}
+	x++;	
+	}
+
+	x = 0;
+	while (x<CurrentWord){
+		if (State[x].AnsweredCorrectly == false){
+			if (CheckAnswer(x, false) < 0){
+				return x;
+			}
+		}
+	x++;	
+	}
+	return FoundCurrent;
+}
+
+function CheckAnswer(GapNum, MarkAnswer){
+	var Guess = GetGapValue(GapNum);
+	var UpperGuess = '';
+	var UpperAnswer = '';
+	if (CaseSensitive == false){
+		UpperGuess = Guess.toUpperCase();
+	}
+	else{
+		UpperGuess = Guess;
+	}
+	var Match = -1;
+	for (var i = 0; i<I[GapNum][1].length; i++){
+		if (CaseSensitive == false){
+			UpperAnswer = I[GapNum][1][i][0].toUpperCase();
+		}
+		else{
+			UpperAnswer = I[GapNum][1][i][0];
+		}
+		if (TrimString(UpperGuess) == UpperAnswer){
+			Match = i;
+			if (MarkAnswer == true){
+				State[GapNum].AnsweredCorrectly = true;
+			}
+		}
+	}
+	return Match;
+}
+
+function GetHint(GapNum){
+	Guess = GetGapValue(GapNum);
+
+	if (CheckAnswer(GapNum, false) > -1){return ''}
+	RightBits = new Array();
+	for (var i=0; i<I[GapNum][1].length; i++){
+		RightBits[i] = CheckBeginning(Guess, I[GapNum][1][i][0]);
+	}
+	var RightOne = FindLongest(RightBits);
+	var Result = I[GapNum][1][RightOne][0].substring(0,RightBits[RightOne].length);
+//Add another char if the last one is a space
+	if (Result.charAt(Result.length-1) == ' '){
+		Result = I[GapNum][1][RightOne][0].substring(0,RightBits[RightOne].length+1);
+	}
+	return Result;
+}
+
+function ShowHint(){
+	if (document.getElementById('FeedbackDiv').style.display == 'block'){return;}
+	if (Locked == true){return;}
+	var CurrGap = FindCurrent();
+	if (CurrGap < 0){return;}
+
+	var HintString = GetHint(CurrGap);
+
+	if (HintString.length > 0){
+		SetGapValue(CurrGap, HintString);
+		State[CurrGap].HintsAndChecks += 1;
+	}
+	ShowMessage(GiveHint);
+}
+
+function TypeChars(Chars){
+	var CurrGap = FindCurrent();
+	if (CurrGap < 0){return;}
+	if (document.getElementById('Gap' + CurrGap) != null){
+		SetGapValue(CurrGap, document.getElementById('Gap' + CurrGap).value + Chars);
+	}
+}
+
+
+
+
+
+
+
+
+//-->
+
+//]]>
+
+</script>
+
+
+</head>
+
+<body onload="StartUp()" id="TheBody" >
+
+<!-- BeginTopNavButtons -->
+
+
+<div class="NavButtonBar" id="TopNavBar">
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="history.back(); return false;">&lt;=</button>
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)"  onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='Niveau2.htm'; return false;"> Index </button>
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='Vocabulaire.htm'; return false;">=&gt;</button>
+
+
+</div>
+
+
+
+<!-- EndTopNavButtons -->
+
+<div class="Titles">
+	<h2 class="ExerciseTitle">Justesse de mesure</h2>
+<!-- 	
+<h3 class="ExerciseSubtitle">Texte trou&#x00E9;.</h3>
+
+ -->
+
+
+</div>
+
+<!--<div id="InstructionsDiv" class="StdDiv">
+	<div id="Instructions">Compl&#x00E9;tez le texte suivant. Cliquez ensuite sur "correction". Vous pouvez utiliser "Aide" pour obtenir une lettre indice. Vous pouvez aussi cliquer sur "Indice" pour obtenir un indice. Vous perdrez des points si vous utilisez "Aide" ou "Indice"!</div>
+</div> -->
+
+
+
+
+
+<div id="MainDiv" class="StdDiv">
+
+<!-- These top buttons hidden; reveal if required -->
+<!--
+<button id="CheckButton1" class="FuncButton" onmouseover="FuncBtnOver(this)" onfocus="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onblur="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckAnswers()">&nbsp;Correction&nbsp;</button>
+
+
+<button class="FuncButton" onmouseover="FuncBtnOver(this)" onfocus="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onblur="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="ShowHint()">&nbsp;Aide&nbsp;</button>
+
+
+ -->
+ 
+<div id="ClozeDiv">
+<form id="Cloze" method="post" action="" onsubmit="return false;">
+<div class="ClozeBody">
+<table border="0" cellpadding="2" cellspacing="2"><tbody><tr><td width="15%"><img src="Medias/Juliette.jpg" alt="Juliette.jpg" title="Juliette" width="80%"></img></td><td>La fid&#x00E9;lit&#x00E9; c'est bien ... mais &#x00E7;a ne suffit pas !<br />Prenons l'exemple de Juliette. Juliette travaille dans un autre laboratoire que Sam, le laboratoire ProKem (labo 2). Elle aussi a d&#x00E9;velopp&#x00E9; une m&#x00E9;thode de dosage de la substance X, qui lui permet d'obtenir une meilleure fid&#x00E9;lit&#x00E9;. En effet, en r&#x00E9;p&#x00E9;tant comme Sam plusieurs mesures sur la m&#x00EA;me solution de substance X, l'incertitude type associ&#x00E9;e &#x00E0; une mesure due au d&#x00E9;faut de r&#x00E9;p&#x00E9;tabilit&#x00E9; de sa m&#x00E9;thode est la suivante : <i>u</i>(<i>c</i><sub>r&#x00E9;p&#x00E9;tabilit&#x00E9;</sub>) = 0,062 mmol&sdot;L<span class="exposant">-1</span>. Si on compare avec les 0,29 mmol&sdot;L<span class="exposant">-1</span> de Sam, c'est environ 5 fois mieux ! Cela veut dire que la m&#x00E9;thode de Juliette est plus fid&#x00E8;le que celle de Sam (en conditions de r&#x00E9;p&#x00E9;tabilit&#x00E9;) donc qu'il y a moins de variations quand on r&#x00E9;p&#x00E8;te le dosage sur le m&#x00EA;me &#x00E9;chantillon. Mais sa mesure est-elle n&#x00E9;cessairement plus fiable ? Autrement dit, le r&#x00E9;sultat qu'elle obient est-il plus proche de la <b>vraie</b> valeur (v&#x00E9;ritable concentration de la substance X dans l'&#x00E9;chantillon test&#x00E9; par les deux labos) ? Cela reste &#x00E0; voir ...</td></tr></tbody></table><br /><br />Lorsqu'on parle de l'&#x00E9;cart entre la meilleure estimation d'une grandeur par une m&#x00E9;thode et la valeur vraie de cette grandeur on ne s'int&#x00E9;resse plus &#x00E0; la fid&#x00E9;lit&#x00E9;. On s'int&#x00E9;resse &#x00E0; la <b>justesse</b> de la m&#x00E9;thode. Reste &#x00E0; savoir comment &#x00E9;valuer cette justesse. Supposons que Juliette ait fait comme Sam 10 r&#x00E9;p&#x00E9;titions de sa m&#x00E9;thode sur le m&#x00EA;me &#x00E9;chantillon, identique &#x00E9;galement &#x00E0; celui utilis&#x00E9; par Sam. Comparons les moyennes obtenues par les 2 labos, c'est-&#x00E0;-dire la meilleure estimation de la concentration de X dans chaque labo : <br /><center><br /><table border="1" cellpadding="10" cellspacing="0"><tbody><tr><td align="center">Labo 1 (Sam)</td><td align="center">Labo 2 (Juliette)</td></tr><tr><td align="center"><i><span class="avg">c</span></i><sub>(X, labo 1)</sub> = 10,518 mmol&sdot;L<span class="exposant">-1</span></td><td align="center"><i><span class="avg">c</span></i><sub>(X, labo 2)</sub> = 10,677 mmol&sdot;L<span class="exposant">-1</span></td></tr></tbody></table><br /></center><br />On dirait qu'il y a comme un d&#x00E9;saccord ! Qui dit vrai ? On a vu que la notion de valeur vraie est tr&#x00E8;s th&#x00E9;orique, car elle est impossible &#x00E0; conna&#x00EE;tre de mani&#x00E8;re absolue. Cependant, il existe quand m&#x00EA;me une solution : pour &#x00E9;valuer la justesse d'une m&#x00E9;thode, il est n&#x00E9;cessaire d'avoir une r&#x00E9;f&#x00E9;rence &#x00E0; laquelle on peut se fier. Cette r&#x00E9;f&#x00E9;rence est appel&#x00E9;e <b>&#x00E9;talon de contr&#x00F4;le</b>. Supposons que l'&#x00E9;chantillon sur lequel Sam et Juliette ont fait leurs essais soit justement un &#x00E9;talon de contr&#x00F4;le. <br /><figure><br /><img src="Medias/etalcont.jpg" alt="etalcont.jpg" title="etalcont" width="15%" style="display: block; margin-left: auto; margin-right: auto; text-align: center;"></img><br /><figcaption style="text-align:center">Un &#x00E9;talon de contr&#x00F4;le de nitrite de potassium</figcaption><br /></figure><br />En chimie, les &#x00E9;talons de contr&#x00F4;le sont des solutions dont on conna&#x00EE;t tr&#x00E8;s pr&#x00E9;cis&#x00E9;ment la concentration car on les a obtenues par pes&#x00E9;e d'une substance de r&#x00E9;f&#x00E9;rence tr&#x00E8;s stable et de grande puret&#x00E9;. Disons qu'ici la valeur de concentration affich&#x00E9;e par le fabricant de l'&#x00E9;talon de contr&#x00F4;le est la suivante :<br /><br /><center><i>c</i><sub>(X, contr&#x00F4;le)</sub> = (10,520 &plusmn; 0,025) mmol&sdot;L<span class="exposant">-1</span></center><br /><br />La m&#x00E9;thode de Sam est donc plus juste que celle de Juliette car il obtient une mesure plus proche de la r&#x00E9;f&#x00E9;rence. D'o&#x00F9; vient le probl&#x00E8;me de Juliette ? Jusqu'ici, nous n'avions &#x00E9;voqu&#x00E9; qu'un seul type d'erreur, les erreurs al&#x00E9;atoires dues aux petites fluctuations des conditions op&#x00E9;ratoires (temp&#x00E9;rature, humidit&#x00E9;, etc.). Mais ici il y a forc&#x00E9;ment un autre probl&#x00E8;me, puisque la m&#x00E9;thode de Juliette, fluctue peu mais <b>se trompe syst&#x00E9;matiquement de la m&#x00EA;me mani&#x00E8;re</b>. Il faut donc distinguer deux fa&#x00E7;ons de se tromper : <br /><ul> <li>Les <b>erreurs al&#x00E9;atoires</b> (probl&#x00E8;me de Sam) : ces erreurs entra&#x00EE;nent un d&#x00E9;faut de fid&#x00E9;lit&#x00E9; (et plus pr&#x00E9;cis&#x00E9;ment de r&#x00E9;p&#x00E9;tabilit&#x00E9; dans le cas de Sam puisque c'est le m&#x00EA;me op&#x00E9;rateur qui manipule avec le m&#x00EA;me mat&#x00E9;riel, dans le m&#x00EA;me labo, dans un court laps de temps).</li><li>Les <b>erreurs syst&#x00E9;matiques</b> ou <b>biais</b> : ces erreurs entra&#x00EE;nent un d&#x00E9;faut de justesse. On dit alors que la m&#x00E9;thode est biais&#x00E9;e.</li></ul> <br />Tout cela est expliqu&#x00E9; dans l'animation ci-dessous :<br /><div align="center"><object data="Medias/Anim/Erreurs/erreurs.html" type="text/html" width="700" height="500"><br /> alt : <a href="Medias/Anim/Erreurs/erreurs.html">erreurs.html</a></object><br /></div><br />OK. Pour les erreurs al&#x00E9;atoires on a compris d'o&#x00F9; elles venaient, mais quid des erreurs syst&#x00E9;matiques ? Dans ce cas, il faut supposer qu'il y a un probl&#x00E8;me au niveau de la m&#x00E9;thode m&#x00EA;me. Par exemple, l'un des appareils de Juliette est peut-&#x00EA;tre mal calibr&#x00E9; ; ou alors, s'il s'agit d'un titrage, le rep&#x00E9;rage de l'&#x00E9;quivalence se fait avec un indicateur color&#x00E9; qui vire apr&#x00E8;s l'&#x00E9;quivalence r&#x00E9;elle ; la m&#x00E9;thode de Juliette pourrait &#x00E9;galement faire intervenir une loi (ex : Beer-Lambert en spectrophotom&#x00E9;trie) qui ne s'applique pas bien dans le cas pr&#x00E9;sent (sortie du domaine lin&#x00E9;aire, par exemple)... <br /><br /><div class="important" id="impjust">En revanche, on n'int&#x00E8;gre pas dans les erreurs syst&#x00E9;matique les erreurs grossi&#x00E8;res (le cas o&#x00F9; Juliette utliserait mal un appareil par exemple).</div><br />Contrairement aux erreurs al&#x00E9;atoires, qu'on ne peut traiter que de mani&#x00E8;re statistique comme nous l'avons vu avec Sam, le biais peut &#x00EA;tre quantifi&#x00E9; par une valeur unique :<br /><img src="Medias/biais.jpg" alt="biais.jpg" title="biais" width="15%" style="display: block; margin-left: auto; margin-right: auto; text-align: center;"></img><br />On d&#x00E9;finit &#x00E9;galement le biais relatif (exprim&#x00E9; en %) par le rapport suivant :<br /><img src="Medias/biaisrel.jpg" alt="biais.jpg" title="biaisrel" width="25%" style="display: block; margin-left: auto; margin-right: auto; text-align: center;"></img><br /><br />On peut donc calculer les biais des m&#x00E9;thodes de Sam et Juliette : <br /><center><br /><table border="1" cellpadding="10" cellspacing="0"><tbody><tr><td align="left">Laboratoire</td><td align="center">Labo 1 (Sam)</td><td align="center">Labo 2 (Juliette)</td></tr><tr><td align="left">Biais (mmol&sdot;L<span class="exposant">-1</span>)</td><td align="center">10,518-10,520=-0,002</td><td align="center">10,677-10,520=0,157 mmol</td></tr><tr><td align="left">Biais relatif (%)</td><td align="center">0,019</td><td align="center">1,5</td></tr></tbody></table><br /></center><br />Il y a donc une tr&#x00E8;s grande diff&#x00E9;rence entre les deux labos. Seulement, il est g&#x00E9;n&#x00E9;ralement facile de supprimer le biais une fois celui-ci d&#x00E9;tect&#x00E9;. En &#x00E9;tudiant sa m&#x00E9;thode, Juliette pourra la corriger en modifiant selon l'origine du probl&#x00E8;me, l'&#x00E9;talonnage des appareils, l'indicateur color&#x00E9;, ou la concentration des substances par dilution. Elle se retrouvera alors avec une m&#x00E9;thode &#x00E0; la fois juste et tr&#x00E8;s fid&#x00E8;le. Lorsqu'un biais est d&#x00E9;tectable, il est donc souvent plus facile &#x00E0; supprimer qu'un d&#x00E9;faut de fid&#x00E9;lit&#x00E9;.<br /><div class="important" id="impjust2">De fa&#x00E7;on g&#x00E9;n&#x00E9;rale, on peut consid&#x00E9;rer que l'erreur syst&#x00E9;matique n'est jamais &#x00E9;valu&#x00E9;e car elle est :<ul> <li>soit inconnue,</li><li>soit connue et alors corrig&#x00E9;e, auquel cas on l'annule.</li></ul>Ainsi lorsqu'on exprime un r&#x00E9;sultat avec une incertitude, celle-ci est uniquement due au d&#x00E9;faut de fid&#x00E9;lit&#x00E9; de la m&#x00E9;thode.</div><br /><br />Dans l'exercice suivant, vous aurez &#x00E0; utiliser un tableur. Un technicien met au point une m&#x00E9;thode de dosage. Il r&#x00E9;alise 5 mesures sur un &#x00E9;talon de contr&#x00F4;le de la substance &#x00E0; doser. Pour chacune de ces mesures vous devrez indiquer la valeur de l'erreur syst&#x00E9;matique et de l'erreur al&#x00E9;atoire (attention, la valeur de celle-ci est parfois n&#x00E9;gative). Les r&#x00E9;sultats devront &#x00EA;tre exprim&#x00E9;s avec la m&#x00EA;me pr&#x00E9;cision que les donn&#x00E9;es de l'exercice.<br /><br /><center><br /><table border="1" cellpadding="10" cellspacing="0"><tbody><tr><td align="left">Mesure N&#x00B0;</td><td align="center">1</td><td align="center">2</td><td align="center">3</td><td align="center">4</td><td align="center">5</td></tr><tr><td align="left">Concentration (mol&sdot;L<span class="exposant">-1</span>)</td><td align="center">1,119</td><td align="center">1,133</td><td align="center">1,152</td><td align="center">1,120</td><td align="center">1,125</td></tr><tr><td align="left">Moyenne <i><span class="avg">c</span></i> (mol&sdot;L<span class="exposant">-1</span>)</td><td align="center" colspan="5"><span class="GapSpan" id="GapSpan0"><input type="text" id="Gap0" onfocus="TrackFocus(0)" onblur="LeaveGap()" class="GapBox" size="6"></input></span></td></tr><tr><td align="left">Concentration de l'&#x00E9;talon de contr&#x00F4;le<i>c<sub>ref</sub></i> (mol&sdot;L<span class="exposant">-1</span>)</td><td align="center" colspan="5">1,003</td></tr><tr><td align="left">Erreur syst&#x00E9;matique (mol&sdot;L<span class="exposant">-1</span>)</td><td align="center"><span class="GapSpan" id="GapSpan1"><input type="text" id="Gap1" onfocus="TrackFocus(1)" onblur="LeaveGap()" class="GapBox" size="6"></input></span></td><td align="center"><span class="GapSpan" id="GapSpan2"><input type="text" id="Gap2" onfocus="TrackFocus(2)" onblur="LeaveGap()" class="GapBox" size="6"></input></span></td><td align="center"><span class="GapSpan" id="GapSpan3"><input type="text" id="Gap3" onfocus="TrackFocus(3)" onblur="LeaveGap()" class="GapBox" size="6"></input></span></td><td align="center"><span class="GapSpan" id="GapSpan4"><input type="text" id="Gap4" onfocus="TrackFocus(4)" onblur="LeaveGap()" class="GapBox" size="6"></input></span></td><td align="center"><span class="GapSpan" id="GapSpan5"><input type="text" id="Gap5" onfocus="TrackFocus(5)" onblur="LeaveGap()" class="GapBox" size="6"></input></span></td></tr><tr><td align="left">Erreur al&#x00E9;atoire (mol&sdot;L<span class="exposant">-1</span>)</td><td align="center"><span class="GapSpan" id="GapSpan6"><input type="text" id="Gap6" onfocus="TrackFocus(6)" onblur="LeaveGap()" class="GapBox" size="6"></input></span></td><td align="center"><span class="GapSpan" id="GapSpan7"><input type="text" id="Gap7" onfocus="TrackFocus(7)" onblur="LeaveGap()" class="GapBox" size="6"></input></span></td><td align="center"><span class="GapSpan" id="GapSpan8"><input type="text" id="Gap8" onfocus="TrackFocus(8)" onblur="LeaveGap()" class="GapBox" size="6"></input></span></td><td align="center"><span class="GapSpan" id="GapSpan9"><input type="text" id="Gap9" onfocus="TrackFocus(9)" onblur="LeaveGap()" class="GapBox" size="6"></input></span></td><td align="center"><span class="GapSpan" id="GapSpan10"><input type="text" id="Gap10" onfocus="TrackFocus(10)" onblur="LeaveGap()" class="GapBox" size="6"></input></span></td></tr></tbody></table><br /></center>
+</div>
+</form>
+</div>
+
+
+
+<button id="CheckButton2" class="FuncButton" onmouseover="FuncBtnOver(this)" onfocus="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onblur="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckAnswers()">&nbsp;Correction&nbsp;</button>
+
+
+<button class="FuncButton" onmouseover="FuncBtnOver(this)" onfocus="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onblur="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="ShowHint()">&nbsp;Aide&nbsp;</button>
+
+
+</div>
+
+
+
+<div class="Feedback" id="FeedbackDiv">
+<div class="FeedbackText" id="FeedbackContent"></div>
+<button id="FeedbackOKButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="HideFeedback(); return false;">&nbsp;OK&nbsp;</button>
+</div>
+
+<!-- BeginBottomNavButtons -->
+
+
+<div class="NavButtonBar" id="BottomNavBar">
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="history.back(); return false;">&lt;=</button>
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)"  onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='Niveau2.htm'; return false;"> Index </button>
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='Vocabulaire.htm'; return false;">=&gt;</button>
+
+
+</div>
+
+
+
+<!-- EndBottomNavButtons -->
+
+<!-- BeginSubmissionForm -->
+
+<!-- EndSubmissionForm -->
+
+</body>
+
+</html>

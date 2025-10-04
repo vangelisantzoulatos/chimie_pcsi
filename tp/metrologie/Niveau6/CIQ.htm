@@ -1,0 +1,981 @@
+<?xml version="1.0"?>
+       <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "xhtml11.dtd">
+       <html xmlns="http://www.w3.org/1999/xhtml"
+             xml:lang="en"><head><meta name="author" content="Created with Hot Potatoes by Half-Baked Software, registered to Vangelis."></meta><meta name="keywords" content="Hot Potatoes, Hot Potatoes, Half-Baked Software, Windows, University of Victoria"></meta>
+
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<meta name="DC:Creator" content="Vangelis" />
+<meta name="DC:Title" content="Contr&#x00F4;le Interne de la Qualit&#x00E9; (CIQ)" />
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+
+<title>
+Contr&#x00F4;le Interne de la Qualit&#x00E9; (CIQ)
+</title>
+
+<!-- Made with executable version 6.3 Release 0 Build 5 -->
+
+<!-- The following insertion allows you to add your own code directly to this head tag from the configuration screen -->
+
+<link rel="stylesheet" type="text/css" href="../Zzz-Bidouillage/ext2.css" />
+
+<link rel="stylesheet" type="text/css" href="../Zzz-Bidouillage/ext2.css" />
+
+<script type="text/javascript">
+
+//<![CDATA[
+
+<!--
+
+
+
+
+function Client(){
+//if not a DOM browser, hopeless
+	this.min = false; if (document.getElementById){this.min = true;};
+
+	this.ua = navigator.userAgent;
+	this.name = navigator.appName;
+	this.ver = navigator.appVersion;  
+
+//Get data about the browser
+	this.mac = (this.ver.indexOf('Mac') != -1);
+	this.win = (this.ver.indexOf('Windows') != -1);
+
+//Look for Gecko
+	this.gecko = (this.ua.indexOf('Gecko') > 1);
+	if (this.gecko){
+		this.geckoVer = parseInt(this.ua.substring(this.ua.indexOf('Gecko')+6, this.ua.length));
+//		if (this.geckoVer < 20020000){this.min = false;}
+	}
+	
+//Look for Firebird
+	this.firebird = (this.ua.indexOf('Firebird') > 1);
+	
+//Look for Safari
+	this.safari = (this.ua.indexOf('Safari') > 1);
+	if (this.safari){
+		this.gecko = false;
+	}
+	
+//Look for IE
+	this.ie = (this.ua.indexOf('MSIE') > 0);
+	if (this.ie){
+		this.ieVer = parseFloat(this.ua.substring(this.ua.indexOf('MSIE')+5, this.ua.length));
+		if (this.ieVer < 5.5){this.min = false;}
+	}
+	
+//Look for Opera
+	this.opera = (this.ua.indexOf('Opera') > 0);
+	if (this.opera){
+		this.operaVer = parseFloat(this.ua.substring(this.ua.indexOf('Opera')+6, this.ua.length));
+		if (this.operaVer < 7.04){this.min = false;}
+	}
+	if (this.min == false){
+//		alert('Your browser may not be able to handle this page.');
+	}
+	
+//Special case for the horrible ie5mac
+	this.ie5mac = (this.ie&&this.mac&&(this.ieVer<6));
+}
+
+var C = new Client();
+
+//for (prop in C){
+//	alert(prop + ': ' + C[prop]);
+//}
+
+
+
+//CODE FOR HANDLING NAV BUTTONS AND FUNCTION BUTTONS
+
+//[strNavBarJS]
+function NavBtnOver(Btn){
+	if (Btn.className != 'NavButtonDown'){Btn.className = 'NavButtonUp';}
+}
+
+function NavBtnOut(Btn){
+	Btn.className = 'NavButton';
+}
+
+function NavBtnDown(Btn){
+	Btn.className = 'NavButtonDown';
+}
+//[/strNavBarJS]
+
+function FuncBtnOver(Btn){
+	if (Btn.className != 'FuncButtonDown'){Btn.className = 'FuncButtonUp';}
+}
+
+function FuncBtnOut(Btn){
+	Btn.className = 'FuncButton';
+}
+
+function FuncBtnDown(Btn){
+	Btn.className = 'FuncButtonDown';
+}
+
+function FocusAButton(){
+	if (document.getElementById('CheckButton1') != null){
+		document.getElementById('CheckButton1').focus();
+	}
+	else{
+		if (document.getElementById('CheckButton2') != null){
+			document.getElementById('CheckButton2').focus();
+		}
+		else{
+			document.getElementsByTagName('button')[0].focus();
+		}
+	}
+}
+
+
+
+
+//CODE FOR HANDLING DISPLAY OF POPUP FEEDBACK BOX
+
+var topZ = 1000;
+
+function ShowMessage(Feedback){
+	var Output = Feedback + '<br /><br />';
+	document.getElementById('FeedbackContent').innerHTML = Output;
+	var FDiv = document.getElementById('FeedbackDiv');
+	topZ++;
+	FDiv.style.zIndex = topZ;
+	FDiv.style.top = TopSettingWithScrollOffset(30) + 'px';
+
+	FDiv.style.display = 'block';
+
+	ShowElements(false, 'input');
+	ShowElements(false, 'select');
+	ShowElements(false, 'object');
+	ShowElements(true, 'object', 'FeedbackContent');
+
+//Focus the OK button
+	setTimeout("document.getElementById('FeedbackOKButton').focus()", 50);
+	
+//
+//	RefreshImages();
+//
+}
+
+function ShowElements(Show, TagName, ContainerToReverse){
+// added third argument to allow objects in the feedback box to appear
+//IE bug -- hide all the form elements that will show through the popup
+//FF on Mac bug : doesn't redisplay objects whose visibility is set to visible
+//unless the object's display property is changed
+
+	//get container object (by Id passed in, or use document otherwise)
+	TopNode = document.getElementById(ContainerToReverse);
+	var Els;
+	if (TopNode != null) {
+		Els = TopNode.getElementsByTagName(TagName);
+	} else {
+		Els = document.getElementsByTagName(TagName);
+	}
+
+	for (var i=0; i<Els.length; i++){
+		if (TagName == "object") {
+			//manipulate object elements in all browsers
+			if (Show == true){
+				Els[i].style.visibility = 'visible';
+				//get Mac FireFox to manipulate display, to force screen redraw
+				if (C.mac && C.gecko) {Els[i].style.display = '';}
+			}
+			else{
+				Els[i].style.visibility = 'hidden';
+				if (C.mac && C.gecko) {Els[i].style.display = 'none';}
+			}
+		} 
+		else {
+			// tagName is either input or select (that is, Form Elements)
+			// ie6 has a problem with Form elements, so manipulate those
+			if (C.ie) {
+				if (C.ieVer < 7) {
+					if (Show == true){
+						Els[i].style.visibility = 'visible';
+					}
+					else{
+						Els[i].style.visibility = 'hidden';
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+function HideFeedback(){
+	document.getElementById('FeedbackDiv').style.display = 'none';
+	ShowElements(true, 'input');
+	ShowElements(true, 'select');
+	ShowElements(true, 'object');
+	if (Finished == true){
+		Finish();
+	}
+}
+
+
+//GENERAL UTILITY FUNCTIONS AND VARIABLES
+
+//PAGE DIMENSION FUNCTIONS
+function PageDim(){
+//Get the page width and height
+	this.W = 600;
+	this.H = 400;
+	this.W = document.getElementsByTagName('body')[0].clientWidth;
+	this.H = document.getElementsByTagName('body')[0].clientHeight;
+}
+
+var pg = null;
+
+function GetPageXY(El) {
+	var XY = {x: 0, y: 0};
+	while(El){
+		XY.x += El.offsetLeft;
+		XY.y += El.offsetTop;
+		El = El.offsetParent;
+	}
+	return XY;
+}
+
+function GetScrollTop(){
+	if (typeof(window.pageYOffset) == 'number'){
+		return window.pageYOffset;
+	}
+	else{
+		if ((document.body)&&(document.body.scrollTop)){
+			return document.body.scrollTop;
+		}
+		else{
+			if ((document.documentElement)&&(document.documentElement.scrollTop)){
+				return document.documentElement.scrollTop;
+			}
+			else{
+				return 0;
+			}
+		}
+	}
+}
+
+function GetViewportHeight(){
+	if (typeof window.innerHeight != 'undefined'){
+		return window.innerHeight;
+	}
+	else{
+		if (((typeof document.documentElement != 'undefined')&&(typeof document.documentElement.clientHeight !=
+     'undefined'))&&(document.documentElement.clientHeight != 0)){
+			return document.documentElement.clientHeight;
+		}
+		else{
+			return document.getElementsByTagName('body')[0].clientHeight;
+		}
+	}
+}
+
+function TopSettingWithScrollOffset(TopPercent){
+	var T = Math.floor(GetViewportHeight() * (TopPercent/100));
+	return GetScrollTop() + T; 
+}
+
+//CODE FOR AVOIDING LOSS OF DATA WHEN BACKSPACE KEY INVOKES history.back()
+var InTextBox = false;
+
+function SuppressBackspace(e){ 
+	if (InTextBox == true){return;}
+	if (C.ie) {
+		thisKey = window.event.keyCode;
+	}
+	else {
+		thisKey = e.keyCode;
+	}
+
+	var Suppress = false;
+
+	if (thisKey == 8) {
+		Suppress = true;
+	}
+
+	if (Suppress == true){
+		if (C.ie){
+			window.event.returnValue = false;	
+			window.event.cancelBubble = true;
+		}
+		else{
+			e.preventDefault();
+		}
+	}
+}
+
+if (C.ie){
+	document.attachEvent('onkeydown',SuppressBackspace);
+	window.attachEvent('onkeydown',SuppressBackspace);
+}
+else{
+	if (window.addEventListener){
+		window.addEventListener('keypress',SuppressBackspace,false);
+	}
+}
+
+function ReduceItems(InArray, ReduceToSize){
+	var ItemToDump=0;
+	var j=0;
+	while (InArray.length > ReduceToSize){
+		ItemToDump = Math.floor(InArray.length*Math.random());
+		InArray.splice(ItemToDump, 1);
+	}
+}
+
+function Shuffle(InArray){
+	var Num;
+	var Temp = new Array();
+	var Len = InArray.length;
+
+	var j = Len;
+
+	for (var i=0; i<Len; i++){
+		Temp[i] = InArray[i];
+	}
+
+	for (i=0; i<Len; i++){
+		Num = Math.floor(j  *  Math.random());
+		InArray[i] = Temp[Num];
+
+		for (var k=Num; k < (j-1); k++) {
+			Temp[k] = Temp[k+1];
+		}
+		j--;
+	}
+	return InArray;
+}
+
+function WriteToInstructions(Feedback) {
+	document.getElementById('InstructionsDiv').innerHTML = Feedback;
+
+	RefreshImages();
+
+}
+
+
+
+Imgs = new Array();
+
+function PreloadImages(){
+	var a = PreloadImages.arguments;
+	for (var i=0; i<a.length; i++){
+		Imgs[i] = new Image();
+		Imgs[i].src = a[i];
+	}
+}
+
+function RefreshImages(){
+	for (var i=0; i<document.images.length; i++){
+		if (document.images[i].name.substring(0,6) != 'NavBar'){
+			document.images[i].src = document.images[i].src;
+		}
+	}
+}
+
+
+function EscapeDoubleQuotes(InString){
+	return InString.replace(/"/g, '&quot;')
+}
+
+function TrimString(InString){
+        var x = 0;
+
+        if (InString.length != 0) {
+                while ((InString.charAt(InString.length - 1) == '\u0020') || (InString.charAt(InString.length - 1) == '\u000A') || (InString.charAt(InString.length - 1) == '\u000D')){
+                        InString = InString.substring(0, InString.length - 1)
+                }
+
+                while ((InString.charAt(0) == '\u0020') || (InString.charAt(0) == '\u000A') || (InString.charAt(0) == '\u000D')){
+                        InString = InString.substring(1, InString.length)
+                }
+
+                while (InString.indexOf('  ') != -1) {
+                        x = InString.indexOf('  ')
+                        InString = InString.substring(0, x) + InString.substring(x+1, InString.length)
+                 }
+
+                return InString;
+        }
+
+        else {
+                return '';
+        }
+}
+
+function FindLongest(InArray){
+	if (InArray.length < 1){return -1;}
+
+	var Longest = 0;
+	for (var i=1; i<InArray.length; i++){
+		if (InArray[i].length > InArray[Longest].length){
+			Longest = i;
+		}
+	}
+	return Longest;
+}
+
+//UNICODE CHARACTER FUNCTIONS
+function IsCombiningDiacritic(CharNum){
+	var Result = (((CharNum >= 0x0300)&&(CharNum <= 0x370))||((CharNum >= 0x20d0)&&(CharNum <= 0x20ff)));
+	Result = Result || (((CharNum >= 0x3099)&&(CharNum <= 0x309a))||((CharNum >= 0xfe20)&&(CharNum <= 0xfe23)));
+	return Result;
+}
+
+function IsCJK(CharNum){
+	return ((CharNum >= 0x3000)&&(CharNum < 0xd800));
+}
+
+//SETUP FUNCTIONS
+//BROWSER WILL REFILL TEXT BOXES FROM CACHE IF NOT PREVENTED
+function ClearTextBoxes(){
+	var NList = document.getElementsByTagName('input');
+	for (var i=0; i<NList.length; i++){
+		if ((NList[i].id.indexOf('Guess') > -1)||(NList[i].id.indexOf('Gap') > -1)){
+			NList[i].value = '';
+		}
+		if (NList[i].id.indexOf('Chk') > -1){
+			NList[i].checked = '';
+		}
+	}
+}
+
+//EXTENSION TO ARRAY OBJECT
+function Array_IndexOf(Input){
+	var Result = -1;
+	for (var i=0; i<this.length; i++){
+		if (this[i] == Input){
+			Result = i;
+		}
+	}
+	return Result;
+}
+Array.prototype.indexOf = Array_IndexOf;
+
+//IE HAS RENDERING BUG WITH BOTTOM NAVBAR
+function RemoveBottomNavBarForIE(){
+	if ((C.ie)&&(document.getElementById('Reading') != null)){
+		if (document.getElementById('BottomNavBar') != null){
+			document.getElementById('TheBody').removeChild(document.getElementById('BottomNavBar'));
+		}
+	}
+}
+
+
+
+
+//HOTPOTNET-RELATED CODE
+
+var HPNStartTime = (new Date()).getTime();
+var SubmissionTimeout = 30000;
+var Detail = ''; //Global that is used to submit tracking data
+
+function Finish(){
+//If there's a form, fill it out and submit it
+	if (document.store != null){
+		Frm = document.store;
+		Frm.starttime.value = HPNStartTime;
+		Frm.endtime.value = (new Date()).getTime();
+		Frm.mark.value = Score;
+		Frm.detail.value = Detail;
+		Frm.submit();
+	}
+}
+
+
+
+
+
+//JCLOZE CORE JAVASCRIPT CODE
+
+function ItemState(){
+	this.ClueGiven = false;
+	this.HintsAndChecks = 0;
+	this.MatchedAnswerLength = 0;
+	this.ItemScore = 0;
+	this.AnsweredCorrectly = false;
+	this.Guesses = new Array();
+	return this;
+}
+
+var Feedback = '';
+var Correct = 'Bravo! Bien jou&#x00E9;.';
+var Incorrect = 'Une partie de la r&#x00E9;ponse est correcte. Les erreurs ont &#x00E9;t&#x00E9; effac&#x00E9;es.'; 
+var GiveHint = 'La lettre suivante a &#x00E9;t&#x00E9; ajout&#x00E9;e.';
+var CaseSensitive = false;
+var YourScoreIs = 'Votre score est de:';
+var Finished = false;
+var Locked = false;
+var Score = 0;
+var CurrentWord = 0;
+var Guesses = '';
+var TimeOver = false;
+
+I = new Array();
+
+I[0] = new Array();
+I[0][1] = new Array();
+I[0][1][0] = new Array();
+I[0][1][0][0] = '\u0068\u006F\u006D\u006F\u0067\u00E8\u006E\u0065';
+I[0][1][1] = new Array();
+I[0][1][1][0]='\u0073\u0074\u0061\u0062\u006C\u0065';
+I[0][2]='';
+
+I[1] = new Array();
+I[1][1] = new Array();
+I[1][1][0] = new Array();
+I[1][1][0][0] = '\u0073\u0074\u0061\u0062\u006C\u0065';
+I[1][1][1] = new Array();
+I[1][1][1][0]='\u0068\u006F\u006D\u006F\u0067\u00E8\u006E\u0065';
+I[1][2]='';
+
+I[2] = new Array();
+I[2][1] = new Array();
+I[2][1][0] = new Array();
+I[2][1][0][0] = '\u002D\u0030\u002C\u0030\u0030\u0030\u0031';
+I[2][2]='';
+
+I[3] = new Array();
+I[3][1] = new Array();
+I[3][1][0] = new Array();
+I[3][1][0][0] = '\u0073\u0079\u0073\u0074\u00E9\u006D\u0061\u0074\u0069\u0071\u0075\u0065';
+I[3][2]='';
+
+I[4] = new Array();
+I[4][1] = new Array();
+I[4][1][0] = new Array();
+I[4][1][0][0] = '\u004F\u0075\u0069';
+I[4][2]='';
+
+I[5] = new Array();
+I[5][1] = new Array();
+I[5][1][0] = new Array();
+I[5][1][0][0] = '\u004F\u0075\u0069';
+I[5][2]='';
+
+
+State = new Array();
+
+function StartUp(){
+	RemoveBottomNavBarForIE();
+//Show a keypad if there is one	(added bugfix for 6.0.4.12)
+	if (document.getElementById('CharacterKeypad') != null){
+		document.getElementById('CharacterKeypad').style.display = 'block';
+	}
+	
+
+
+
+
+
+	PreloadImages('Medias/cartecont1.jpg','Medias/cartecont2.jpg');
+
+
+	var i = 0;
+
+	State.length = 0;
+	for (i=0; i<I.length; i++){
+		State[i] = new ItemState();
+	}
+	
+	ClearTextBoxes();
+	
+
+
+}
+
+function ShowClue(ItemNum){
+	if (Locked == true){return;}
+	State[ItemNum].ClueGiven = true;
+	ShowMessage(I[ItemNum][2]);
+}
+
+function SaveCurrentAnswers(){
+	var Ans = '';
+	for (var i=0; i<I.length; i++){
+		Ans = GetGapValue(i);
+		if ((Ans.length > 0)&&(Ans != State[i].Guesses[State[i].Guesses.length-1])){
+			State[i].Guesses[State[i].Guesses.length] = Ans;
+		}
+	}
+}
+
+function CompileGuesses(){
+	var F = document.getElementById('store');
+	if (F != null){
+		var Temp = '<?xml version="1.0"?><hpnetresult><fields>';
+		var GapLabel = '';
+		for (var i=0; i<State.length; i++){
+			GapLabel = 'Gap ' + (i+1).toString();
+			Temp += '<field><fieldname>' + GapLabel + '</fieldname>';
+			Temp += '<fieldtype>student-responses</fieldtype><fieldlabel>' + GapLabel + '</fieldlabel>';
+			Temp += '<fieldlabelid>JClozeStudentResponses</fieldlabelid><fielddata>';
+			for (var j=0; j<State[i].Guesses.length; j++){
+				if (j>0){Temp += '| ';}
+				Temp += State[i].Guesses[j] + ' ';	
+			}	
+  		Temp += '</fielddata></field>';
+		}
+		Temp += '</fields></hpnetresult>';
+		Detail = Temp;
+	}
+}
+
+function CheckAnswers(){
+	if (Locked == true){return;}
+	SaveCurrentAnswers();
+	var AllCorrect = true;
+
+//Check each answer
+	for (var i = 0; i<I.length; i++){
+
+		if (State[i].AnsweredCorrectly == false){
+//If it's right, calculate its score
+			if (CheckAnswer(i, true) > -1){
+				var TotalChars = GetGapValue(i).length;
+				State[i].ItemScore = (TotalChars-State[i].HintsAndChecks)/TotalChars;
+				if (State[i].ClueGiven == true){State[i].ItemScore /= 2;}
+				if (State[i].ItemScore <0 ){State[i].ItemScore = 0;}
+				State[i].AnsweredCorrectly = true;
+//Drop the correct answer into the page, replacing the text box
+				SetCorrectAnswer(i, GetGapValue(i));
+			}
+			else{
+//Otherwise, increment the hints for this item, as a penalty
+				State[i].HintsAndChecks++;
+
+//then set the flag
+				AllCorrect = false;
+			}
+		}
+	}
+
+//Calculate the total score
+	var TotalScore = 0;
+	for (i=0; i<State.length; i++){
+		TotalScore += State[i].ItemScore;
+	}
+	TotalScore = Math.floor((TotalScore * 100)/I.length);
+
+//Compile the output
+	Output = '';
+
+	if (AllCorrect == true){
+		Output = Correct + '<br />';
+	}
+
+	Output += YourScoreIs + ' ' + TotalScore + '%.<br />';
+	if (AllCorrect == false){
+		Output += Incorrect;
+	}
+	ShowMessage(Output);
+	setTimeout('WriteToInstructions(Output)', 50);
+	
+	Score = TotalScore;
+	CompileGuesses();
+	
+	if ((AllCorrect == true)||(Finished == true)){
+	
+
+
+		TimeOver = true;
+		Locked = true;
+		Finished = true;
+		setTimeout('Finish()', SubmissionTimeout);
+	}
+
+}
+
+function TrackFocus(BoxNumber){
+	CurrentWord = BoxNumber;
+	InTextBox = true;
+}
+
+function LeaveGap(){
+	InTextBox = false;
+}
+
+function CheckBeginning(Guess, Answer){
+	var OutString = '';
+	var i = 0;
+	var UpperGuess = '';
+	var UpperAnswer = '';
+
+	if (CaseSensitive == false) {
+		UpperGuess = Guess.toUpperCase();
+		UpperAnswer = Answer.toUpperCase();
+	}
+	else {
+		UpperGuess = Guess;
+		UpperAnswer = Answer;
+	}
+
+	while (UpperGuess.charAt(i) == UpperAnswer.charAt(i)) {
+		OutString += Guess.charAt(i);
+		i++;
+	}
+	OutString += Answer.charAt(i);
+	return OutString;
+}
+
+function GetGapValue(GNum){
+	var RetVal = '';
+	if ((GNum<0)||(GNum>=I.length)){return RetVal;}
+	if (document.getElementById('Gap' + GNum) != null){
+		RetVal = document.getElementById('Gap' + GNum).value;
+		RetVal = TrimString(RetVal);
+	}
+	else{
+		RetVal = State[GNum].Guesses[State[GNum].Guesses.length-1];
+	}
+	return RetVal;
+}
+
+function SetGapValue(GNum, Val){
+	if ((GNum<0)||(GNum>=I.length)){return;}
+	if (document.getElementById('Gap' + GNum) != null){
+		document.getElementById('Gap' + GNum).value = Val;
+		document.getElementById('Gap' + GNum).focus();
+	}
+}
+
+function SetCorrectAnswer(GNum, Val){
+	if ((GNum<0)||(GNum>=I.length)){return;}
+	if (document.getElementById('GapSpan' + GNum) != null){
+		document.getElementById('GapSpan' + GNum).innerHTML = Val;
+	}
+}
+
+function FindCurrent() {
+	var x = 0;
+	FoundCurrent = -1;
+
+//Test the current word:
+//If its state is not set to already correct, check the word.
+	if (State[CurrentWord].AnsweredCorrectly == false){
+		if (CheckAnswer(CurrentWord, false) < 0){
+			return CurrentWord;
+		}
+	}
+	
+	x=CurrentWord + 1;
+	while (x<I.length){
+		if (State[x].AnsweredCorrectly == false){
+			if (CheckAnswer(x, false) < 0){
+				return x;
+			}
+		}
+	x++;	
+	}
+
+	x = 0;
+	while (x<CurrentWord){
+		if (State[x].AnsweredCorrectly == false){
+			if (CheckAnswer(x, false) < 0){
+				return x;
+			}
+		}
+	x++;	
+	}
+	return FoundCurrent;
+}
+
+function CheckAnswer(GapNum, MarkAnswer){
+	var Guess = GetGapValue(GapNum);
+	var UpperGuess = '';
+	var UpperAnswer = '';
+	if (CaseSensitive == false){
+		UpperGuess = Guess.toUpperCase();
+	}
+	else{
+		UpperGuess = Guess;
+	}
+	var Match = -1;
+	for (var i = 0; i<I[GapNum][1].length; i++){
+		if (CaseSensitive == false){
+			UpperAnswer = I[GapNum][1][i][0].toUpperCase();
+		}
+		else{
+			UpperAnswer = I[GapNum][1][i][0];
+		}
+		if (TrimString(UpperGuess) == UpperAnswer){
+			Match = i;
+			if (MarkAnswer == true){
+				State[GapNum].AnsweredCorrectly = true;
+			}
+		}
+	}
+	return Match;
+}
+
+function GetHint(GapNum){
+	Guess = GetGapValue(GapNum);
+
+	if (CheckAnswer(GapNum, false) > -1){return ''}
+	RightBits = new Array();
+	for (var i=0; i<I[GapNum][1].length; i++){
+		RightBits[i] = CheckBeginning(Guess, I[GapNum][1][i][0]);
+	}
+	var RightOne = FindLongest(RightBits);
+	var Result = I[GapNum][1][RightOne][0].substring(0,RightBits[RightOne].length);
+//Add another char if the last one is a space
+	if (Result.charAt(Result.length-1) == ' '){
+		Result = I[GapNum][1][RightOne][0].substring(0,RightBits[RightOne].length+1);
+	}
+	return Result;
+}
+
+function ShowHint(){
+	if (document.getElementById('FeedbackDiv').style.display == 'block'){return;}
+	if (Locked == true){return;}
+	var CurrGap = FindCurrent();
+	if (CurrGap < 0){return;}
+
+	var HintString = GetHint(CurrGap);
+
+	if (HintString.length > 0){
+		SetGapValue(CurrGap, HintString);
+		State[CurrGap].HintsAndChecks += 1;
+	}
+	ShowMessage(GiveHint);
+}
+
+function TypeChars(Chars){
+	var CurrGap = FindCurrent();
+	if (CurrGap < 0){return;}
+	if (document.getElementById('Gap' + CurrGap) != null){
+		SetGapValue(CurrGap, document.getElementById('Gap' + CurrGap).value + Chars);
+	}
+}
+
+
+
+
+
+
+
+
+//-->
+
+//]]>
+
+</script>
+
+
+</head>
+
+<body onload="StartUp()" id="TheBody" >
+
+<!-- BeginTopNavButtons -->
+
+
+<div class="NavButtonBar" id="TopNavBar">
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="history.back(); return false;">&lt;=</button>
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)"  onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='Niveau6.htm'; return false;"> Index </button>
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='CEQ.htm'; return false;">=&gt;</button>
+
+
+</div>
+
+
+
+<!-- EndTopNavButtons -->
+
+<div class="Titles">
+	<h2 class="ExerciseTitle">Contr&#x00F4;le Interne de la Qualit&#x00E9; (CIQ)</h2>
+<!-- 	
+<h3 class="ExerciseSubtitle">Texte trou&#x00E9;.</h3>
+
+ -->
+
+
+</div>
+
+<!--<div id="InstructionsDiv" class="StdDiv">
+	<div id="Instructions">Compl&#x00E9;tez le texte suivant. Cliquez ensuite sur "correction". Vous pouvez utiliser "Aide" pour obtenir une lettre indice. Vous pouvez aussi cliquer sur "Indice" pour obtenir un indice. Vous perdrez des points si vous utilisez "Aide" ou "Indice"!</div>
+</div> -->
+
+
+
+
+
+<div id="MainDiv" class="StdDiv">
+
+<!-- These top buttons hidden; reveal if required -->
+<!--
+<button id="CheckButton1" class="FuncButton" onmouseover="FuncBtnOver(this)" onfocus="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onblur="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckAnswers()">&nbsp;Correction&nbsp;</button>
+
+
+<button class="FuncButton" onmouseover="FuncBtnOver(this)" onfocus="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onblur="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="ShowHint()">&nbsp;Aide&nbsp;</button>
+
+
+ -->
+ 
+<div id="ClozeDiv">
+<form id="Cloze" method="post" action="" onsubmit="return false;">
+<div class="ClozeBody">
+La qualit&#x00E9; des appareils de mesure d'un laboratoire peut &#x00EA;tre contr&#x00F4;l&#x00E9;e de deux mani&#x00E8;res diff&#x00E9;rentes :<ul> <li>Par des v&#x00E9;rifications INTRA-laboratoire : on parle alors de contr&#x00F4;le interne de la qualit&#x00E9; (CIQ). Cela consiste &#x00E0; assurer un suivi et une maintenance r&#x00E9;guliers des appareils &#x00E0; l'aide d'outils tels que les fiches de vie ou les cartes de contr&#x00F4;le. On emploi pour ces v&#x00E9;rifications des &#x00E9;talons de contr&#x00F4;le.</li><li>Par des v&#x00E9;rifications INTER-laboratoire : c'est le contr&#x00F4;le externe de la qualit&#x00E9; (CEQ). Il s'agit alors de r&#x00E9;aliser des comparaisons entre laboratoires au moyen d'essais d'aptitudes, et de scores (ex : score Z).</li></ul> <br /><br />Nous allons commencer par pr&#x00E9;senter les diff&#x00E9;rents outils du contr&#x00F4;le interne de la qualit&#x00E9;.<br />Un laboratoire, apr&#x00E8;s avoir prouv&#x00E9; qu'il est apte &#x00E0; utiliser une m&#x00E9;thode de mesure donn&#x00E9;e (&#x00E0; l'aide d'une validation interne ou externe) doit employer des moyens de <b>v&#x00E9;rification continue</b> permettant de surveiller en temps r&#x00E9;el la qualit&#x00E9; des mesurages. C'est ce qu'on appelle le contr&#x00F4;le de la qualit&#x00E9;.<br />Ces v&#x00E9;rifications r&#x00E9;guli&#x00E8;res permettent de contr&#x00F4;ler la justesse, la fid&#x00E9;lid&#x00E9; et/ou l'exactitde des mesures, et ainsi d'accepter ou non les r&#x00E9;sultats obtenus. A plus long termes, les outils qu'elle met en oeuvre permettent de rep&#x00E9;rer des ph&#x00E9;nom&#x00E8;nes de <b>d&#x00E9;rive</b> et ainsi de mettre en place des actions pr&#x00E9;ventives ou correctives. <br /><br />Ce type de contr&#x00F4;le n&#x00E9;cessite l'utilisation d'un <b>mat&#x00E9;riau de r&#x00E9;f&#x00E9;rence</b>, <b>homog&#x00E8;ne</b> et <b>stable</b>, dont la valeur conventionnelle <i>y</i><sub>ref</sub> est connue avec son incertitude associ&#x00E9;e <i>u</i>(<i>y</i><sub>ref</sub>). Ce mat&#x00E9;riau de r&#x00E9;f&#x00E9;rence est &#x00E9;galement appel&#x00E9; <b>&#x00E9;talon de contr&#x00F4;le</b>. Plusieurs mesurages sont effectu&#x00E9;s sur cet &#x00E9;talon de contr&#x00F4;le, et les r&#x00E9;sultats peuvent &#x00EA;tre analys&#x00E9;s de deux mani&#x00E8;res diff&#x00E9;rentes : <b>cartes de contr&#x00F4;le</b> ou <b>scores</b>.<br /><br /><b>V&#x00E9;rification de l'exactitude de mesure &#x00E0; l'aide de cartes de contr&#x00F4;le</b><br />La carte de contr&#x00F4;le permet de contr&#x00F4;ler la stabilit&#x00E9; d'une m&#x00E9;thode d'analyse dans le temps. C'est gr&#x00E2;ce aux informations qu'elle donne que l'on peut mettre en place des actions pr&#x00E9;ventives.<br />Elle consiste en un graphique repr&#x00E9;sentant la mesure obtenue sur un mat&#x00E9;riau de r&#x00E9;f&#x00E9;rence en fonction du temps. Le mesurage est r&#x00E9;alis&#x00E9; de diverses fa&#x00E7;ons :<ul> <li>quotidiennement (le premier utilisateur de la balance par exemple) ;</li><li>&#x00E0; chaque utilisation de l'appareil ;</li><li>&#x00E0; l'int&#x00E9;rieur de chaque s&#x00E9;rie d'essais si on utilise par exemple un passeur d'&#x00E9;chantillon ;</li><li>&#x00E0; des intervalles de temps d&#x00E9;finis au pr&#x00E9;alable.</li></ul> <br /><br />Voici par exemple un exemple de carte de contr&#x00F4;le pour une balance de pr&#x00E9;cision :<br /><img src="Medias/cartecont1.jpg" alt="cartecont1.jpg" title="cartecont1" width="50%" style="display: block; margin-left: auto; margin-right: auto; text-align: center;"></img><br /><br />Pour obtenir cette carte, on a pes&#x00E9; chaque jour un mat&#x00E9;riau de r&#x00E9;f&#x00E9;rence (masse &#x00E9;talon de 100,0000 mg). Les limites d'alarme et de contr&#x00F4;le sont &#x00E9;tablies comme suit : <ul> <li>Les <b>limites d'alarme</b> sup&#x00E9;rieure et inf&#x00E9;rieure sont situ&#x00E9;es &#x00E0; 2 &#x00E9;carts-type de la ligne centrale (&plusmn; 2<i>s</i>);</li><li>Les <b>limites de contr&#x00F4;le</b> sup&#x00E9;rieure et inf&#x00E9;rieure sont situ&#x00E9;es &#x00E0; 3 &#x00E9;carts-type de la ligne centrale (&plusmn; 3<i>s</i>);</li></ul> <br /><br />L'&#x00E9;cart-type <i>s</i> peut &#x00EA;tre obtenu lors d'une p&#x00E9;riode pr&#x00E9;liminaire d'&#x00E9;tude du mat&#x00E9;riau de r&#x00E9;f&#x00E9;rence avec un grand nombre de mesurages n (n&gt;30). La moyenne obtenue lors de cette &#x00E9;tude pr&#x00E9;liminaire peut &#x00E9;galement &#x00EA;tre utilis&#x00E9;e pour fixer la valeur de r&#x00E9;f&#x00E9;rence.<br />Comment interpr&#x00E9;ter une carte de contr&#x00F4;le ? On utilise pour cela les r&#x00E8;gles de Westgard, qui indiquent &#x00E0; quel moment il est n&#x00E9;cessaire de d&#x00E9;clencher des actions correctives. Citons les plus importantes. Une action corrective est n&#x00E9;cessaire dans les cas suivants : <ul> <li>un point sort des limites de contr&#x00F4;le </li><li>7 points successifs sont situ&#x00E9;s tous au-dessus ou au-dessous de la valeur de r&#x00E9;f&#x00E9;rence</li><li>8 points successifs indiquent une tendance syst&#x00E9;matique vers le haut ou vers le bas</li><li>2 points successifs sont situ&#x00E9;s hors des limites d&#x2019;alarme</li></ul> <br /><br />Le non-respect d'une seule de ces r&#x00E8;gles exige de prendre une action correctrice, comme par exemple un recalibrage de l&#x2019;appareil. Dans l'exemple indiqu&#x00E9; ci-dessus (carte de contr&#x00F4;le de la balance de pr&#x00E9;cision), aucune r&#x00E8;gle n'est viol&#x00E9;e, on peut en conclure que la balance est <b>sous contr&#x00F4;le</b>.<br /><br /><b>V&#x00E9;rification de l'exactitude de mesure &#x00E0; l'aide de scores</b><br />Nous rappelons ce point pour m&#x00E9;moire. En effet, cela a &#x00E9;t&#x00E9; vu dans la le&#x00E7;on suivante : si l'erreur de mesure, lors d'une v&#x00E9;rification, est sup&#x00E9;rieure &#x00E0; l'EMT (Erreur Maximale Tol&#x00E9;r&#x00E9;e) choisie, alors l'exactitude de mesure est inusuffisante et une action est n&#x00E9;cessaire (&#x00E9;talonnage d'un appareil par exemple).<br /><br />A vous maintenant d'&#x00E9;tudier un exemple. Reprenons le cas de l'&#x00E9;talonnage d'une balance, qu'on a v&#x00E9;rifi&#x00E9; quotidiennenement &#x00E0; l'aide d'une masse &#x00E9;talon de 100,0000 mg. Voici la carte de contr&#x00F4;le obtenue :<br /><img src="Medias/cartecont2.jpg" alt="cartecont2.jpg" title="cartecont2" width="50%" style="display: block; margin-left: auto; margin-right: auto; text-align: center;"></img><br /><br />Les qualit&#x00E9;s que doit g&#x00E9;n&#x00E9;ralement poss&#x00E9;der un mat&#x00E9;riau de r&#x00E9;f&#x00E9;rence : il doit &#x00EA;tre <span class="GapSpan" id="GapSpan0"><input type="text" id="Gap0" onfocus="TrackFocus(0)" onblur="LeaveGap()" class="GapBox" size="8"></input></span> et <span class="GapSpan" id="GapSpan1"><input type="text" id="Gap1" onfocus="TrackFocus(1)" onblur="LeaveGap()" class="GapBox" size="6"></input></span>.<br />La moyenne des valeurs obtenues vaut 9,9999 mg. En d&#x00E9;duire le biais de cette balance : <i>e</i><sub>s</sub>=<span class="GapSpan" id="GapSpan2"><input type="text" id="Gap2" onfocus="TrackFocus(2)" onblur="LeaveGap()" class="GapBox" size="7"></input></span> mg<br />Quel type d&#x2019;erreur est quantifi&#x00E9; par le biais : erreur <span class="GapSpan" id="GapSpan3"><input type="text" id="Gap3" onfocus="TrackFocus(3)" onblur="LeaveGap()" class="GapBox" size="12"></input></span>.<br />Peut-on dire que cette balance est &#x00AB; sous contr&#x00F4;le &#x00BB; ? <span class="GapSpan" id="GapSpan4"><input type="text" id="Gap4" onfocus="TrackFocus(4)" onblur="LeaveGap()" class="GapBox" size="6"></input></span> <br />La s&#x00E9;ance suivante, vous r&#x00E9;alisez une nouvelle pes&#x00E9;e de la masse &#x00E9;talon et obtenez une masse de 100,0001 mg. Faut-il entreprendre une action correctrice ? <span class="GapSpan" id="GapSpan5"><input type="text" id="Gap5" onfocus="TrackFocus(5)" onblur="LeaveGap()" class="GapBox" size="6"></input></span>
+</div>
+</form>
+</div>
+
+
+
+<button id="CheckButton2" class="FuncButton" onmouseover="FuncBtnOver(this)" onfocus="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onblur="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckAnswers()">&nbsp;Correction&nbsp;</button>
+
+
+<button class="FuncButton" onmouseover="FuncBtnOver(this)" onfocus="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onblur="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="ShowHint()">&nbsp;Aide&nbsp;</button>
+
+
+</div>
+
+
+
+<div class="Feedback" id="FeedbackDiv">
+<div class="FeedbackText" id="FeedbackContent"></div>
+<button id="FeedbackOKButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="HideFeedback(); return false;">&nbsp;OK&nbsp;</button>
+</div>
+
+<!-- BeginBottomNavButtons -->
+
+
+<div class="NavButtonBar" id="BottomNavBar">
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="history.back(); return false;">&lt;=</button>
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)"  onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='Niveau6.htm'; return false;"> Index </button>
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='CEQ.htm'; return false;">=&gt;</button>
+
+
+</div>
+
+
+
+<!-- EndBottomNavButtons -->
+
+<!-- BeginSubmissionForm -->
+
+<!-- EndSubmissionForm -->
+
+</body>
+
+</html>
