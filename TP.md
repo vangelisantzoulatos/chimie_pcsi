@@ -18,3 +18,8 @@ permalink: /TP/
 <a href="/chimie_pcsi/tp/Complexe_feSCN.pdf" download>énoncé</a> | <a href="https://docs.google.com/document/d/1dcvvDTUwxA-SD4NQPtXconV90uOLlzZcPirD-ICSG4s/edit?usp=drive_link" download>document à rendre</a>
 
 ---
+
+**TP3** --- Détermination d'une constante de partage  
+<a href="/chimie_pcsi/tp/partage.pdf" download>énoncé</a> | <a href="/chimie_pcsi/tp/TP3_modele.tex" download>modèle CR latex</a> | <a href="/chimie_pcsi/tp/montecarlo_multi.py" download>script Monte Carlo</a> | dossier récupération comptes-rends
+
+---

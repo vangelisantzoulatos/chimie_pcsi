@@ -1,0 +1,76 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb}
+\usepackage{siunitx}
+\usepackage{mhchem}
+\usepackage{booktabs}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\title{TP3 – Détermination d'une constante de partage}
+\author{}
+\date{}
+
+\begin{document}
+	\maketitle
+	
+\section{Objectifs}
+
+Rappeler brièvement le but de l'expérience : extraction de l'acide propanoïque, titrage, constante de partage. L’équilibre de partage s’écrit :
+\[ \ce{C2H5COOH (aq) <=> C2H5COOH (org)} \]
+
+	% Commentaire : Rédigez ici avec vos mots l’objectif du TP, en insistant sur l’intérêt pratique de l’extraction liquide-liquide.
+
+	
+\section{Résultats expérimentaux}
+	\begin{itemize}
+		\item Volume de solution titrée : \SI{}{\milli\liter}
+		\item Concentration de la soude : \SI{}{\mole\per\liter}
+		\item Volume équivalent mesuré : \SI{}{\milli\liter}
+	\end{itemize}
+	
+	\section{Exploitation}
+	\subsection{Constante de partage $K$}
+	Calcul détaillé à partir des données brutes.
+	
+	\subsection{Rendement d’extraction}
+	Définition, calcul et interprétation.
+	
+	\section{Analyse des incertitudes}
+Lister les principales sources d’incertitude et indiquer la valeur numérique retenue pour chacune :
+	\begin{itemize}
+		\item Pipette jaugée : volume nominal $V = \SI{10,0}{\milli\liter}$, incertitude $\pm \SI{0,03}{\milli\liter}$.
+		\item Burette graduée : volume équivalent lu $V_\text{eq}$, incertitude de lecture $\pm \SI{0,05}{\milli\liter}$.
+		\item Fiole jaugée : volume $\SI{100,0}{\milli\liter}$, incertitude $\pm \SI{0,05}{\milli\liter}$.
+		\item Concentration de la soude $C_\text{NaOH}$ : incertitude relative $\approx 1\,\%$.
+		\item Appréciation du virage coloré : erreur de lecture subjective estimée à $\pm \SI{0,05}{\milli\liter}$.
+	\end{itemize}
+	
+	\section{Simulation Monte Carlo}
+\subsection{Paramètres retenus}
+Pour chaque grandeur, on associe une loi de probabilité :
+\begin{itemize}
+	\item Pipette jaugée : loi uniforme sur $[V - 0,03,\, V + 0,03]$.
+	\item Burette : loi uniforme sur $[V_\text{eq} - 0,05,\, V_\text{eq} + 0,05]$.
+	\item Fiole jaugée : loi uniforme sur $[100,0 - 0,05,\, 100,0 + 0,05]$.
+	\item Concentration de NaOH : loi normale centrée sur la valeur mesurée avec écart-type $= 1\% \times C_\text{NaOH}$.
+\end{itemize}
+
+\subsection{Consignes de simulation}
+\begin{enumerate}
+	\item Générer aléatoirement $N = 10\,000$ jeux de données selon les lois ci-dessus.
+	\item Calculer la constante de partage $K$ pour chaque jeu de données.
+	\item Déterminer la moyenne, l’écart-type, et l'incertitude pour un niveau de confiance de 95 \%.
+\end{enumerate}
+
+\subsection{Résultats obtenus}
+
+	\section{Résultats collectifs}
+	Tableau récapitulatif des résultats des 12 groupes, statistiques (moyenne, écart-type, intervalle de confiance).
+	
+	\section{Discussion et conclusion}
+	- Comparaison extraction simple vs. multiple.  
+	- Discussion sur l’écart simulation/expérience.  
+	
+\end{document}
