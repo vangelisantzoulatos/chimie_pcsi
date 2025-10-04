@@ -8,7 +8,9 @@ permalink: /TP/
 
 ---
 
-<a href="/chimie_pcsi/tp/metrologie/index.htm" download>Formation à la métrologie</a>
+<a href="/chimie_pcsi/tp/metrologie/index.htm" target="_blank" rel="noopener noreferrer">
+  Formation à la métrologie
+</a>
 
 
 ---
