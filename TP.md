@@ -28,7 +28,7 @@ permalink: /TP/
 ---
 
 **TP3** --- Détermination d'une constante de partage  
-<a href="/chimie_pcsi/tp/partage.pdf" download>énoncé</a> | <a href="/chimie_pcsi/tp/TP3_modele.tex" download>modèle CR latex</a> | <a href="/chimie_pcsi/tp/montecarlo_multi.py" download>script Monte Carlo</a> | <a href="https://drive.google.com/drive/folders/1LQbTxHXsFkHyWrNkLim5s68N4qDpTcVo?usp=sharing"target="_blank" rel="noopener noreferrer"> dossier récupération comptes-rendus</a>
+<a href="/chimie_pcsi/tp/partage.pdf" download>énoncé</a> | <a href="/chimie_pcsi/tp/TP3_modele.tex" download>modèle CR latex</a> | <a href="/chimie_pcsi/tp/montecarlo_multi.py" download>script Monte Carlo</a> | <a href="https://drive.google.com/drive/folders/1LQbTxHXsFkHyWrNkLim5s68N4qDpTcVo?usp=sharing" target="_blank" rel="noopener noreferrer"> dossier récupération comptes-rendus</a>
 
 
 ---
