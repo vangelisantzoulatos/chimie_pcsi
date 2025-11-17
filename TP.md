@@ -32,3 +32,9 @@ permalink: /TP/
 
 
 ---
+
+**TP4** --- Conformation et chiralité  
+<a href="/chimie_pcsi/tp/stereochimie.pdf" download>énoncé</a> | 
+
+
+---
