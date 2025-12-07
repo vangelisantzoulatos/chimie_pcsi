@@ -38,3 +38,9 @@ permalink: /TP/
 
 
 ---
+
+**TP5** --- Etude d'une cinétique par conductimétrie  
+<a href="/chimie_pcsi/tp/saponification.pdf" download>énoncé</a> | 
+
+
+---
