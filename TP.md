@@ -44,3 +44,15 @@ permalink: /TP/
 
 
 ---
+
+
+**TP6** --- (non réalisé)  
+
+---
+
+
+**TP7** --- Isomérisation de l’acide maléique en acide fumarique  
+<a href="/chimie_pcsi/tp/isomerisation.pdf" download>énoncé</a> |  <a href="https://drive.google.com/drive/folders/10WQWrEMySEuhHVFPq-fnyBG-G_MlfEWG?usp=sharing" target="_blank" rel="noopener noreferrer"> dossier récupération comptes-rendus</a>  
+
+
+---
