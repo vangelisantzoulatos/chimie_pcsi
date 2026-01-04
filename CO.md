@@ -17,3 +17,4 @@ permalink: /CO/
 **CO2** --- Réactions d'addition nucléophile  
 <a href="/chimie_pcsi/cours/chimie_organique/CO2/CO2_cours.pdf" download>cours</a> | <a href="/chimie_pcsi/cours/chimie_organique/CO2/CO2_fiche.pdf" download>fiche</a> | <a href="/chimie_pcsi/cours/chimie_organique/CO2/CO2_Classiques.pdf" download>classiques</a> | <a href="/chimie_pcsi/cours/chimie_organique/CO2/CO2_td.pdf" download>TD</a> | TD_corrigé | autotest 
 
+
