@@ -57,7 +57,7 @@ permalink: /TP/
 
 ---
 
-**TP8** --- Isomérisation de l’acide maléique en acide fumarique  
+**TP8** --- Analyse d’un fongicide par spectroscopie d’absorption moléculaire  
 <a href="/chimie_pcsi/tp/spectro.pdf" download>énoncé</a> |  <a href="https://drive.google.com/drive/folders/1J_CTHfmb4JrEjJZ6ECCDZHT1DCJImMbv?usp=sharing" target="_blank" rel="noopener noreferrer"> dossier récupération comptes-rendus</a>  
 
 
