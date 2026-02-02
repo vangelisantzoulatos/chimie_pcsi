@@ -63,3 +63,9 @@ permalink: /TP/
 
 ---
 
+
+**TP9** --- Réaction de Grignard : synthèse du 2-phényl-propan-2-ol  
+<a href="/chimie_pcsi/tp/RMgX.pdf" download>énoncé</a> |    
+
+
+---
