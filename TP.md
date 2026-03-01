@@ -69,3 +69,9 @@ permalink: /TP/
 
 
 ---
+
+**TP10** --- Conformité du Destop (pH-métrie)  
+<a href="/chimie_pcsi/tp/destop.pdf" download>énoncé</a> |    
+
+
+---
