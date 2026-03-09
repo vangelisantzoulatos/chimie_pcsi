@@ -30,7 +30,7 @@ permalink: /TM/
 
 
 **TM4** --- Modélisation microscopique d’une transformation chimique  
-<a href="/chimie_pcsi/cours/transformations_matiere/TM4/TM4_Cours.pdf" download>cours</a> | fiche | <a href="/chimie_pcsi/cours/transformations_matiere/TM4/TM4_Classiques.pdf" download>classiques</a> | <a href="/chimie_pcsi/cours/transformations_matiere/TM4/TM4_td.pdf" download>TD</a> | TD_corrigé | 
+<a href="/chimie_pcsi/cours/transformations_matiere/TM4/TM4_cours.pdf" download>cours</a> | fiche | <a href="/chimie_pcsi/cours/transformations_matiere/TM4/TM4_Classiques.pdf" download>classiques</a> | <a href="/chimie_pcsi/cours/transformations_matiere/TM4/TM4_td.pdf" download>TD</a> | TD_corrigé | 
 
 ---
 
