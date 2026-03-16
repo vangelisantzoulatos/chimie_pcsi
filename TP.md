@@ -75,3 +75,9 @@ permalink: /TP/
 
 
 ---
+
+**TP11** --- Dosage du chlorure d'ammonium (conductimétrie)  
+<a href="/chimie_pcsi/tp/nh4cl.pdf" download>énoncé</a> |  dossier récupération comptes-rendus        
+
+
+---
