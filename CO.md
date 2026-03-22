@@ -18,3 +18,8 @@ permalink: /CO/
 <a href="/chimie_pcsi/cours/chimie_organique/CO2/CO2_cours.pdf" download>cours</a> | <a href="/chimie_pcsi/cours/chimie_organique/CO2/CO2_fiche.pdf" download>fiche</a> | <a href="/chimie_pcsi/cours/chimie_organique/CO2/CO2_Classiques.pdf" download>classiques</a> | <a href="/chimie_pcsi/cours/chimie_organique/CO2/CO2_td.pdf" download>TD</a> | <a href="/chimie_pcsi/cours/chimie_organique/CO2/CO2_td-corr.pdf" download>TD_corrigé</a> | autotest 
 
 
+---
+
+**CO3** --- Spectroscopies  
+<a href="/chimie_pcsi/cours/chimie_organique/CO3/CO3_cours.pdf" download>cours</a> | fiche | <a href="/chimie_pcsi/cours/chimie_organique/CO3/CO3_Classiques.pdf" download>classiques</a> | <a href="/chimie_pcsi/cours/chimie_organique/CO3/tables_IR_RMN.pdf" download>Tables IR et RMN</a> | <a href="/chimie_pcsi/cours/chimie_organique/CO3/CO3_td.pdf" download>TD</a> | TD_corrigé | autotest 
+
