@@ -81,3 +81,10 @@ permalink: /TP/
 
 
 ---
+
+
+**TP12** --- Séparation organique (recristallisation)  
+<a href="/chimie_pcsi/tp/separation_organique.pdf" download>énoncé</a> |  dossier récupération comptes-rendus        
+
+
+---
