@@ -23,3 +23,8 @@ permalink: /CO/
 **CO3** --- Spectroscopies  
 <a href="/chimie_pcsi/cours/chimie_organique/CO3/CO3_cours.pdf" download>cours</a> | fiche | <a href="/chimie_pcsi/cours/chimie_organique/CO3/CO3_Classiques.pdf" download>classiques</a> | <a href="/chimie_pcsi/cours/chimie_organique/CO3/table_IR_RMN.pdf" download>Tables IR et RMN</a> | <a href="/chimie_pcsi/cours/chimie_organique/CO3/CO3_td.pdf" download>TD</a> | TD_corrigé | autotest 
 
+---
+
+**CO4** --- Activation et protection des alcools  
+<a href="/chimie_pcsi/cours/chimie_organique/CO4/CO4_cours.pdf" download>cours</a> | fiche | classiques | TD | TD_corrigé | autotest 
+
