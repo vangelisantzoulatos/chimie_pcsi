@@ -21,7 +21,7 @@ permalink: /CO/
 ---
 
 **CO3** --- Spectroscopies  
-<a href="/chimie_pcsi/cours/chimie_organique/CO3/CO3_cours.pdf" download>cours</a> | fiche | <a href="/chimie_pcsi/cours/chimie_organique/CO3/CO3_Classiques.pdf" download>classiques</a> | <a href="/chimie_pcsi/cours/chimie_organique/CO3/table_IR_RMN.pdf" download>Tables IR et RMN</a> | <a href="/chimie_pcsi/cours/chimie_organique/CO3/CO3_td.pdf" download>TD</a> | TD_corrigé | autotest 
+<a href="/chimie_pcsi/cours/chimie_organique/CO3/CO3_cours.pdf" download>cours</a> | fiche | <a href="/chimie_pcsi/cours/chimie_organique/CO3/CO3_Classiques.pdf" download>classiques</a> | <a href="/chimie_pcsi/cours/chimie_organique/CO3/table_IR_RMN.pdf" download>Tables IR et RMN</a> | <a href="/chimie_pcsi/cours/chimie_organique/CO3/CO3_td.pdf" download>TD</a> | <a href="/chimie_pcsi/cours/chimie_organique/CO3/CO3_td-corr.pdf" download>TD_corrigé</a> | autotest 
 
 ---
 
