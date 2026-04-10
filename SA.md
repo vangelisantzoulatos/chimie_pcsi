@@ -31,3 +31,8 @@ permalink: /SA/
 **SA4** --- Oxydoréduction    
 <a href="/chimie_pcsi/cours/solutions_aqueuses/SA4/SA4_cours.pdf" download>cours</a> | fiche | <a href="/chimie_pcsi/cours/solutions_aqueuses/SA4/SA4_Classiques.pdf" download>classiques</a> | <a href="/chimie_pcsi/cours/solutions_aqueuses/SA4/SA4_td.pdf" download>TD</a> | <a href="/chimie_pcsi/cours/solutions_aqueuses/SA4/SA4_td-corr.pdf" download>TD_corrigé</a>  | autotest 
 
+---
+
+**SA5** --- Diagrammes E/pH    
+<a href="/chimie_pcsi/cours/solutions_aqueuses/SA5/SA5_cours.pdf" download>cours</a> | fiche | classiques | TD | TD_corrigé  | autotest 
+
