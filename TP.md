@@ -88,3 +88,9 @@ permalink: /TP/
 
 
 ---
+
+**TP13** --- Synthèse du benzile  
+<a href="/chimie_pcsi/tp/benzoine.pdf" download>énoncé</a> |  dossier récupération comptes-rendus        
+
+
+---

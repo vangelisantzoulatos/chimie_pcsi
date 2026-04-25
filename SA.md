@@ -34,5 +34,5 @@ permalink: /SA/
 ---
 
 **SA5** --- Diagrammes E/pH    
-<a href="/chimie_pcsi/cours/solutions_aqueuses/SA5/SA5_cours.pdf" download>cours</a> | fiche | classiques | TD | TD_corrigé  | autotest 
+<a href="/chimie_pcsi/cours/solutions_aqueuses/SA5/SA5_cours.pdf" download>cours</a> | fiche | <a href="/chimie_pcsi/cours/solutions_aqueuses/SA5/SA5_Classiques.pdf" download>classiques</a> | <a href="/chimie_pcsi/cours/solutions_aqueuses/SA5/SA5_td.pdf" download>TD</a> | TD_corrigé  | autotest 
 

@@ -26,5 +26,15 @@ permalink: /CO/
 ---
 
 **CO4** --- Activation et protection des alcools  
-<a href="/chimie_pcsi/cours/chimie_organique/CO4/CO4_cours.pdf" download>cours</a> | fiche | classiques | TD | TD_corrigé | autotest 
+<a href="/chimie_pcsi/cours/chimie_organique/CO4/CO4_cours.pdf" download>cours</a> | fiche | <a href="/chimie_pcsi/cours/chimie_organique/CO4/CO4_Classiques.pdf" download>classiques</a> | <a href="/chimie_pcsi/cours/chimie_organique/CO4/CO4_td.pdf" download>TD</a> | TD_corrigé | autotest 
+
+---
+
+**CO5** --- Groupe carbonyle, activation et protection  
+<a href="/chimie_pcsi/cours/chimie_organique/CO5/CO5_cours.pdf" download>cours</a> | fiche | classiques | TD | TD_corrigé | autotest 
+
+---
+
+**CO6** --- Oxydoréduction en chimie organique  
+<a href="/chimie_pcsi/cours/chimie_organique/CO6/CO6_cours.pdf" download>cours</a> | fiche | classiques | TD | TD_corrigé | autotest 
 
