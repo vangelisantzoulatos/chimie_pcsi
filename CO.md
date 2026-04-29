@@ -26,7 +26,7 @@ permalink: /CO/
 ---
 
 **CO4** --- Activation et protection des alcools  
-<a href="/chimie_pcsi/cours/chimie_organique/CO4/CO4_cours.pdf" download>cours</a> | fiche | <a href="/chimie_pcsi/cours/chimie_organique/CO4/CO4_Classiques.pdf" download>classiques</a> | <a href="/chimie_pcsi/cours/chimie_organique/CO4/CO4_td.pdf" download>TD</a> | TD_corrigé | autotest 
+<a href="/chimie_pcsi/cours/chimie_organique/CO4/CO4_cours.pdf" download>cours</a> | fiche | <a href="/chimie_pcsi/cours/chimie_organique/CO4/CO4_Classiques.pdf" download>classiques</a> | <a href="/chimie_pcsi/cours/chimie_organique/CO4/CO4_td.pdf" download>TD</a> | <a href="/chimie_pcsi/cours/chimie_organique/CO4/CO4_td-corr.pdf" download>TD_corrigé</a> | autotest 
 
 ---
 
