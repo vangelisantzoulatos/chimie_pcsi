@@ -35,5 +35,4 @@ permalink: /CO/
 ---
 
 **CO6** --- Oxydoréduction en chimie organique  
-<a href="/chimie_pcsi/cours/chimie_organique/CO6/CO6_cours.pdf" download>cours</a> | fiche | classiques | TD | TD_corrigé | autotest 
-
+<a href="/chimie_pcsi/cours/chimie_organique/CO6/CO6_cours.pdf" download>cours</a> | fiche | <a href="/chimie_pcsi/cours/chimie_organique/CO6/CO6_Classiques.pdf" download>classiques</a> | <a href="/chimie_pcsi/cours/chimie_organique/CO6/CO6_td.pdf" download>TD</a> | <a href="/chimie_pcsi/cours/chimie_organique/CO6/CO6_td-corr.pdf" download>TD_corrigé</a> | autotest  
