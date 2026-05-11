@@ -94,3 +94,9 @@ permalink: /TP/
 
 
 ---
+
+**TP14** --- Dosage du fer +II par le cérium +IV (potentiométrie)  
+<a href="/chimie_pcsi/tp/potentio.pdf" download>énoncé</a> |  <a href="https://drive.google.com/drive/folders/1Z3N0FA5DjSp8C6xVpnruuiH_1oNYboOG?usp=sharing" target="_blank" rel="noopener noreferrer"> dossier récupération comptes-rendus</a>        
+
+
+---
