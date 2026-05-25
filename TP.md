@@ -100,3 +100,9 @@ permalink: /TP/
 
 
 ---
+
+**TP15** --- Outils d'optimisation en recherche (Plans d'expériences, analyse en composantes principales)  
+<a href="/chimie_pcsi/tp/boisson.pdf" download>énoncé</a>         
+
+
+---
