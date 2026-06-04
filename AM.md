@@ -27,3 +27,9 @@ questions | autotest |
 <a href="/chimie_pcsi/cours/architecture_matiere/AM3/AM3_cours.pdf" download>cours</a> | <a href="/chimie_pcsi/cours/architecture_matiere/AM3/AM3_fiche.pdf" download>fiche</a> | <a href="/chimie_pcsi/cours/architecture_matiere/AM3/AM3_Classiques.pdf" download>classiques</a> | <a href="/chimie_pcsi/cours/architecture_matiere/AM3/AM3_td.pdf" download>TD</a> | <a href="/chimie_pcsi/cours/architecture_matiere/AM3/AM3_td-corr.pdf" download>TD_corrigé</a> | questions | autotest
 
 ---
+
+
+**AM4** --- Structure et propriétés des solides  
+<a href="/chimie_pcsi/cours/architecture_matiere/AM4/AM4_cours.pdf" download>cours</a> | fiche | classiques | TD | TD_corrigé | questions | autotest
+
+---
