@@ -9,7 +9,7 @@ permalink: /SA/
 ---
 
 **SA1** --- Acides et bases 1 : généralités sur les équilibres acido-basiques  
-<a href="/chimie_pcsi/cours/solutions_aqueuses/SA1/SA1_cours.pdf" download>cours</a> | <a href="/chimie_pcsi/cours/solutions_aqueuses/SA1/SA1_fiche.pdf" download>fiche</a> | <a href="/chimie_pcsi/cours/solutions_aqueuses/SA1/SA1_Classiques.pdf" download>classiques</a> | <a href="/chimie_pcsi/cours/solutions_aqueuses/SA1/SA1_td.pdf" download>TD</a> | <a href="/chimie_pcsi/cours/solutions_aqueuses/SA1/SA1_td-corr.pdf" download>TD_corrigé</a> | autotest 
+<a href="/chimie_pcsi/cours/solutions_aqueuses/SA1/SA1_cours.pdf" download>cours</a> | <a href="/chimie_pcsi/cours/solutions_aqueuses/SA1/SA1_fiche.pdf" download>fiche</a> | <a href="/chimie_pcsi/cours/solutions_aqueuses/SA1/SA1_Classiques.pdf" download>classiques</a> | <a href="/chimie_pcsi/cours/solutions_aqueuses/SA1/SA1_td.pdf" download>TD</a> | <a href="/chimie_pcsi/cours/solutions_aqueuses/SA1/SA1_td-corr.pdf" download>TD_corrigé</a> | autotest   
 ---
 
 **SA2** --- Acides et bases 2 : Méthodes quantitatives  
@@ -21,9 +21,10 @@ permalink: /SA/
 ---
 
 **SA4** --- Oxydoréduction    
-<a href="/chimie_pcsi/cours/solutions_aqueuses/SA4/SA4_cours.pdf" download>cours</a> | fiche | <a href="/chimie_pcsi/cours/solutions_aqueuses/SA4/SA4_Classiques.pdf" download>classiques</a> | <a href="/chimie_pcsi/cours/solutions_aqueuses/SA4/SA4_td.pdf" download>TD</a> | <a href="/chimie_pcsi/cours/solutions_aqueuses/SA4/SA4_td-corr.pdf" download>TD_corrigé</a>  | autotest 
+<a href="/chimie_pcsi/cours/solutions_aqueuses/SA4/SA4_cours.pdf" download>cours</a> | fiche | <a href="/chimie_pcsi/cours/solutions_aqueuses/SA4/SA4_Classiques.pdf" download>classiques</a> | <a href="/chimie_pcsi/cours/solutions_aqueuses/SA4/SA4_td.pdf" download>TD</a> | <a href="/chimie_pcsi/cours/solutions_aqueuses/SA4/SA4_td-corr.pdf" download>TD_corrigé</a>  | autotest  
 ---
 
 **SA5** --- Diagrammes E/pH    
-<a href="/chimie_pcsi/cours/solutions_aqueuses/SA5/SA5_cours.pdf" download>cours</a> | fiche | <a href="/chimie_pcsi/cours/solutions_aqueuses/SA5/SA5_Classiques.pdf" download>classiques</a> | <a href="/chimie_pcsi/cours/solutions_aqueuses/SA5/SA5_td.pdf" download>TD</a> | TD_corrigé  | autotest 
+<a href="/chimie_pcsi/cours/solutions_aqueuses/SA5/SA5_cours.pdf" download>cours</a> | fiche | <a href="/chimie_pcsi/cours/solutions_aqueuses/SA5/SA5_Classiques.pdf" download>classiques</a> | <a href="/chimie_pcsi/cours/solutions_aqueuses/SA5/SA5_td.pdf" download>TD</a> | TD_corrigé  | autotest  
+---
 
