@@ -29,7 +29,7 @@ questions | autotest |
 ---
 
 
-**AM4** --- Structure et propriétés des solides  
-<a href="/chimie_pcsi/cours/architecture_matiere/AM4/AM4_cours.pdf" download>cours</a> | fiche | classiques | TD | TD_corrigé | questions | autotest
+**AM3** --- Interactions intermoléculaires  
+<a href="/chimie_pcsi/cours/architecture_matiere/AM4/AM4_cours.pdf" download>cours</a> | fiche | <a href="/chimie_pcsi/cours/architecture_matiere/AM4/AM4_Classiques.pdf" download>classiques</a> | <a href="/chimie_pcsi/cours/architecture_matiere/AM4/AM4_td.pdf" download>TD</a> | <a href="/chimie_pcsi/cours/architecture_matiere/AM4/AM4_td-corr.pdf" download>TD_corrigé</a> | questions | autotest
 
 ---
