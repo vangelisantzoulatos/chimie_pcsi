@@ -10,20 +10,19 @@ title : Chimie PCSI
 Cette plateforme réunit l’ensemble des ressources du cours de chimie PCSI : polycopiés de cours, feuilles de TD, TP, fiches, documents de travail et de suivi.
 
 Elle accompagne une démarche de travail **progressive, structurée, rigoureuse**.  
-Le cours en classe fournit le cadre essentiel, les explications fondamentales et les méthodes à maîtriser. **Les polycopiés sont des documents d’accompagnement** : la trace écrite principale est celle **construite en cours**, **au tableau** et **dans le cahier**.
+Chaque polycopié est à **lire avant le cours**, en prenant le temps de comprendre, annoter, interroger. Le cours en classe **n’est pas une répétition**, mais un approfondissement, une mise en perspective, une construction.
 
 **Pour vos questions** : `chimie.pcsi.faidherbe@gmail.com`
 
 ---
 
-
 ## Comment travailler ?
 
-
-- ✍️ En cours : prendre en note les éléments essentiels, les raisonnements, les méthodes et les exemples traités au tableau. Le cahier doit contenir les définitions, propriétés, exemples et méthodes vus en cours.
-- ❓ **Poser vos questions en classe** ou via le flux de la classroom.
-- 🧠 **S’entraîner régulièrement**, en revenant sur les exercices et les méthodes abordées.
-- 🔁 **Consolider après le cours** en relisant le poly et en travaillant les exercices associés.
+- 📘 **Lire les polys en avance**, en soulignant les zones floues.
+- 🧠 **Se concentrer sur les idées fondamentales**, pas mémoriser des formules.
+- ❓ **Poser vos éventuelles questions**  sur le document "google docs" prévu à cet effet.
+- ✍️ **En classe** : un cahier et un stylo suffisent ! C'est un moment **actif** où on travaille le cours par la **pratique**, c'est déjà une phase d'entraînement.
+- 🔁 **Revenir aux textes** pour consolider après les séances.
 
 ---
 
