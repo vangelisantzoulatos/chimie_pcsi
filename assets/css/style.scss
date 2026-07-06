@@ -55,10 +55,13 @@ body {
   cursor: default;
 }
 
-/* Rubriques principales cliquables : Accueil, Travaux Pratiques, Cahier de texte */
+/* Rubriques principales cliquables */
 .sidebar ul li:nth-child(1),
 .sidebar ul li:nth-child(7),
-.sidebar ul li:nth-child(8) {
+.sidebar ul li:nth-child(8),
+.sidebar ul li:nth-child(9),
+.sidebar ul li:nth-child(10),
+.sidebar ul li:nth-child(11) {
   font-weight: bold;
 }
 
