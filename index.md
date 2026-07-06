@@ -35,7 +35,7 @@ Chaque polycopié est à **lire avant le cours**, en prenant le temps de compren
 
 ---
 
-<small>Documents pédagogiques conçus par Vangelis Antzoulatos,
+<small>Documents pédagogiques conçus par Vangelis Antzoulatos,  
 professeur de chimie en PCSI au lycée Faidherbe.
 Les documents sont tous au format PDF.  
 Site mis à jour régulièrement.  
