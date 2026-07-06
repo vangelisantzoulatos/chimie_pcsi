@@ -40,3 +40,15 @@ sidebar:
   - name: Cahier de texte
     icon: <i class="fa-solid fa-calendar"></i>
     link: /chimie_pcsi/CT/
+
+  - name: Annonces
+    icon: <i class="fa-solid fa-bullhorn"></i>
+    link: /chimie_pcsi/AN/
+
+  - name: Programme de colles
+    icon: <i class="fa-solid fa-calendar-check"></i>
+    link: /chimie_pcsi/PC/
+
+  - name: Scripts Python
+    icon: <i class="fa-solid fa-code"></i>
+    link: /chimie_pcsi/PY/
