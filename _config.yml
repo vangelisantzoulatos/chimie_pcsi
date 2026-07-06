@@ -1,5 +1,5 @@
 title: Chimie PCSI Faidherbe
-remote_theme: BDHU/minimalist@efa1a0d
+remote_theme: BDHU/minimalist@f19d6a6
 plugins:
   - jekyll-remote-theme
 color-scheme: dark
