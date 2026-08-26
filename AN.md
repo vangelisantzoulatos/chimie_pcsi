@@ -59,7 +59,10 @@ Cette page regroupe les informations importantes : devoirs rendus, corrigés dis
 const SHEET_ID = "1gp4h5An5x9Vbn0P7vEr5-4lBIuISYUsPDX73Df4kjTg";
 const SHEET_NAME = "annonces";
 
-const url = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sheet=${encodeURIComponent(SHEET_NAME)}&tqx=out:json`;
+
+const requete = encodeURIComponent("select * order by A desc");
+
+const url = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sheet=${encodeURIComponent(SHEET_NAME)}&tqx=out:json&tq=${requete}`;
 
 function normaliserTexte(s) {
   return String(s || "").trim().toLowerCase();
@@ -100,8 +103,7 @@ fetch(url)
       .filter(a => {
         const visible = normaliserTexte(a.visible || "oui");
         return visible !== "non" && visible !== "false" && visible !== "0";
-      })
-      .sort((a, b) => String(b.date).localeCompare(String(a.date)));
+      });
 
     const container = document.getElementById("annonces-container");
 
