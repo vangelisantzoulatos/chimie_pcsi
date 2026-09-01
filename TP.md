@@ -1,79 +1,61 @@
 ---
 layout: default
-title: Travaux pratiques
+title : Travaux Pratiques
 permalink: /TP/
 ---
 
-# Travaux pratiques
-
-[Formation à la métrologie](/chimie_pcsi/tp/metrologie/index.htm){:target="_blank" rel="noopener noreferrer"}
+# Travaux Pratiques
 
 ---
 
-**TP1 — Degré acétique d’un vinaigre**  
-[Énoncé](/chimie_pcsi/tp/vinaigre.pdf){:download} · [Document de préparation](/chimie_pcsi/tp/preparation_vinaigre.pdf){:download}
+<a href="/chimie_pcsi/tp/metrologie/index.htm" target="_blank" rel="noopener noreferrer">
+  Formation à la métrologie
+</a>
 
+
+---  
+**TP1** --- Degré acétique d'un vinaigre  
+<a href="/chimie_pcsi/tp/preparation_vinaigre.pdf" download>Document de préparation</a> | <a href="/chimie_pcsi/tp/vinaigre.pdf" download>énoncé</a> | <a href="https://docs.google.com/document/d/1qm0TP5S2syP8UQ3QBxdjzWJRX0VC7_YHSAIzbMDU3aw/edit?usp=drive_link" download>document à rendre</a> | <a href="https://docs.google.com/forms/d/e/1FAIpQLSctvu7yKZvBo5EDGpPyCXlN012i7rh4jTgzvsmf8R2aYeS2vA/viewform?usp=header" download>vos résultats</a> | <a href="https://docs.google.com/spreadsheets/d/17_IIC6nI3TXOmw0GRABZlsJXKgrgAqCb6mCkLRyGOX4/edit?usp=drive_link" download>ensemble des résultats</a>  
+---  
+**TP2** --- Analyse d’un fongicide par spectroscopie d’absorption moléculaire  
+<a href="/chimie_pcsi/tp/spectro.pdf" download>énoncé</a> |  <a href="https://drive.google.com/drive/folders/1J_CTHfmb4JrEjJZ6ECCDZHT1DCJImMbv?usp=sharing" target="_blank" rel="noopener noreferrer"> dossier récupération comptes-rendus</a>   
+---  
+**TP3** --- Etude d'une cinétique par conductimétrie  
+<a href="/chimie_pcsi/tp/saponification.pdf" download>énoncé</a> |  
+---  
+**TP4** --- Conformation et chiralité  
+<a href="/chimie_pcsi/tp/stereochimie.pdf" download>énoncé</a> |  
+---  
+**TP5** --- Isomérisation de l’acide maléique en acide fumarique  
+<a href="/chimie_pcsi/tp/isomerisation.pdf" download>énoncé</a> |  <a href="https://drive.google.com/drive/folders/10WQWrEMySEuhHVFPq-fnyBG-G_MlfEWG?usp=sharing" target="_blank" rel="noopener noreferrer"> dossier récupération comptes-rendus</a>  
+---  
+**TP6** --- Détermination d'une constante d'équilibre  
+<a href="/chimie_pcsi/tp/Complexe_feSCN.pdf" download>énoncé</a> | <a href="https://docs.google.com/document/d/1dcvvDTUwxA-SD4NQPtXconV90uOLlzZcPirD-ICSG4s/edit?usp=drive_link" download>document à rendre</a>  
+---  
+**TP7** --- Détermination d'une constante de partage  
+<a href="/chimie_pcsi/tp/partage.pdf" download>énoncé</a> | <a href="/chimie_pcsi/tp/TP3_modele.tex" download>modèle CR latex</a> | <a href="/chimie_pcsi/tp/montecarlo_multi.py" download>script Monte Carlo</a> | <a href="https://drive.google.com/drive/folders/1LQbTxHXsFkHyWrNkLim5s68N4qDpTcVo?usp=sharing" target="_blank" rel="noopener noreferrer"> dossier récupération comptes-rendus</a>  
+---  
+**TP8** --- Dosage du chlorure d'ammonium (conductimétrie)  
+<a href="/chimie_pcsi/tp/nh4cl.pdf" download>énoncé</a> |  dossier récupération comptes-rendus  
+---   
+**TP9** --- Conformité du Destop (pH-métrie)  
+<a href="/chimie_pcsi/tp/destop.pdf" download>énoncé</a> |  <a href="https://drive.google.com/drive/folders/1jGOu5pU4ApUPFmU5N-I6ntL4I-K9gi8m?usp=sharing" target="_blank" rel="noopener noreferrer"> dossier récupération comptes-rendus</a>  
+---  
+**TP10** --- Réaction de Grignard : synthèse du 2-phényl-propan-2-ol  
+<a href="/chimie_pcsi/tp/RMgX.pdf" download>énoncé</a> |  
+---   
+**TP11** --- Séparation organique (recristallisation)  
+<a href="/chimie_pcsi/tp/separation_organique.pdf" download>énoncé</a> |  dossier récupération comptes-rendus  
+---  
+**TP12** --- Synthèse du benzile  
+<a href="/chimie_pcsi/tp/benzoine.pdf" download>énoncé</a> |  dossier récupération comptes-rendus  
+---  
+**TP13** --- Dosage de la vitamine C    
+<a href="/chimie_pcsi/tp/vitamineC.pdf" download>énoncé</a> |  dossier récupération comptes-rendus  
+---  
+**TP14** --- Dosage du fer +II par le cérium +IV (potentiométrie)  
+<a href="/chimie_pcsi/tp/potentio.pdf" download>énoncé</a> |  <a href="https://drive.google.com/drive/folders/1Z3N0FA5DjSp8C6xVpnruuiH_1oNYboOG?usp=sharing" target="_blank" rel="noopener noreferrer"> dossier récupération comptes-rendus</a>  
+---  
+**TP15** --- Outils d'optimisation en recherche (Plans d'expériences, analyse en composantes principales)  
+<a href="/chimie_pcsi/tp/boisson.pdf" download>énoncé</a>  
 ---
-
-**TP2 — Analyse d’un fongicide par spectroscopie d’absorption moléculaire**  
-[Énoncé](/chimie_pcsi/tp/spectro.pdf){:download}
-
----
-
-**TP3 — Étude d’une cinétique par conductimétrie**  
-[Énoncé](/chimie_pcsi/tp/saponification.pdf){:download}
-
----
-
-**TP4 — Conformation et chiralité**  
-[Énoncé](/chimie_pcsi/tp/stereochimie.pdf){:download}
-
----
-
-**TP5 — Isomérisation de l’acide maléique en acide fumarique**  
-[Énoncé](/chimie_pcsi/tp/isomerisation.pdf){:download}
-
----
-
-**TP6 — Détermination d’une constante d’équilibre**  
-[Énoncé](/chimie_pcsi/tp/Complexe_feSCN.pdf){:download}
-
----
-
-**TP7 — Détermination d’une constante de partage**  
-[Énoncé](/chimie_pcsi/tp/partage.pdf){:download} · [Modèle de compte rendu LaTeX](/chimie_pcsi/tp/TP3_modele.tex){:download} · [Script Monte Carlo](/chimie_pcsi/tp/montecarlo_multi.py){:download}
-
----
-
-**TP8 — Dosage du chlorure d’ammonium (conductimétrie)**  
-[Énoncé](/chimie_pcsi/tp/nh4cl.pdf){:download}
-
----
-
-**TP9 — Conformité du Destop (pH-métrie)**  
-[Énoncé](/chimie_pcsi/tp/destop.pdf){:download}
-
----
-
-**TP10 — Réaction de Grignard : synthèse du 2-phénylpropan-2-ol**  
-[Énoncé](/chimie_pcsi/tp/RMgX.pdf){:download}
-
----
-
-**TP11 — Séparation organique (recristallisation)**  
-[Énoncé](/chimie_pcsi/tp/separation_organique.pdf){:download}
-
----
-
-**TP12 — Synthèse de la benzoïne**  
-[Énoncé](/chimie_pcsi/tp/benzoine.pdf){:download}
-
----
-
-**TP13 — Dosage de la vitamine C**  
-[Énoncé](/chimie_pcsi/tp/vitamineC.pdf){:download}
-
----
-
-**TP14 — Dosage du fer(II) par le cérium(IV) (potentiométrie)**  
-[Énoncé](/chimie_pcsi/tp/potentio.pdf){:download}
