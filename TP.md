@@ -15,7 +15,7 @@ permalink: /TP/
 
 ---  
 **TP1** --- Degré acétique d'un vinaigre  
-<a href="/chimie_pcsi/tp/preparation_vinaigre.pdf" download>Document de préparation</a> | <a href="/chimie_pcsi/tp/vinaigre.pdf" download>énoncé</a> | <a href="https://docs.google.com/document/d/1qm0TP5S2syP8UQ3QBxdjzWJRX0VC7_YHSAIzbMDU3aw/edit?usp=drive_link" download>document à rendre</a> | <a href="https://docs.google.com/forms/d/e/1FAIpQLSctvu7yKZvBo5EDGpPyCXlN012i7rh4jTgzvsmf8R2aYeS2vA/viewform?usp=header" download>vos résultats</a> | <a href="https://docs.google.com/spreadsheets/d/17_IIC6nI3TXOmw0GRABZlsJXKgrgAqCb6mCkLRyGOX4/edit?usp=drive_link" download>ensemble des résultats</a>  
+<a href="/chimie_pcsi/tp/preparation_vinaigre.pdf" download>Document de préparation</a> | <a href="/chimie_pcsi/tp/vinaigre.pdf" download>énoncé</a> | <a href="https://drive.google.com/drive/folders/1GqKz6WSnDD3xmye0dzcBNj1M8p6pQB6u?usp=sharing" target="_blank" rel="noopener noreferrer" >dossier récupération comptes-rendus</a> | <a href="https://docs.google.com/forms/d/e/1FAIpQLSctvu7yKZvBo5EDGpPyCXlN012i7rh4jTgzvsmf8R2aYeS2vA/viewform?usp=header" download>vos résultats</a> | <a href="https://docs.google.com/spreadsheets/d/17_IIC6nI3TXOmw0GRABZlsJXKgrgAqCb6mCkLRyGOX4/edit?usp=drive_link" download>ensemble des résultats</a>  
 ---  
 **TP2** --- Analyse d’un fongicide par spectroscopie d’absorption moléculaire  
 <a href="/chimie_pcsi/tp/spectro.pdf" download>énoncé</a> |  <a href="https://drive.google.com/drive/folders/1J_CTHfmb4JrEjJZ6ECCDZHT1DCJImMbv?usp=sharing" target="_blank" rel="noopener noreferrer"> dossier récupération comptes-rendus</a>   
