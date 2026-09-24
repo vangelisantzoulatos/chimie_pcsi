@@ -18,16 +18,16 @@ permalink: /TP/
 <a href="/chimie_pcsi/tp/preparation_vinaigre.pdf" download>Document de préparation</a> | <a href="/chimie_pcsi/tp/vinaigre.pdf" download>énoncé</a> | <a href="https://drive.google.com/drive/folders/1GqKz6WSnDD3xmye0dzcBNj1M8p6pQB6u?usp=sharing" target="_blank" rel="noopener noreferrer" >dossier récupération comptes-rendus</a> | <a href="https://docs.google.com/forms/d/e/1FAIpQLSctvu7yKZvBo5EDGpPyCXlN012i7rh4jTgzvsmf8R2aYeS2vA/viewform?usp=header" download>vos résultats</a> | <a href="https://docs.google.com/spreadsheets/d/17_IIC6nI3TXOmw0GRABZlsJXKgrgAqCb6mCkLRyGOX4/edit?usp=drive_link" download>ensemble des résultats</a>  
 ---  
 **TP2** --- Analyse d’un fongicide par spectroscopie d’absorption moléculaire  
-<a href="/chimie_pcsi/tp/spectro.pdf" download>énoncé</a> |  <a href="https://drive.google.com/drive/folders/1J_CTHfmb4JrEjJZ6ECCDZHT1DCJImMbv?usp=sharing" target="_blank" rel="noopener noreferrer"> dossier récupération comptes-rendus</a>   
+<a href="/chimie_pcsi/tp/spectro.pdf" download>énoncé</a> |  <a href="https://drive.google.com/drive/folders/1ZGz_A9sN5MiiG09kGh4GTZ935coRdTMz?usp=sharing" target="_blank" rel="noopener noreferrer" >dossier récupération comptes-rendus</a>    
 ---  
 **TP3** --- Etude d'une cinétique par conductimétrie  
-<a href="/chimie_pcsi/tp/saponification.pdf" download>énoncé</a> |  
+<a href="/chimie_pcsi/tp/saponification.pdf" download>énoncé</a> |  <a href="https://drive.google.com/drive/folders/1bIuhfuisRZTMgjqw_BXgVOd_pBKZvpPt?usp=sharing" target="_blank" rel="noopener noreferrer" >dossier récupération comptes-rendus</a>   
 ---  
 **TP4** --- Conformation et chiralité  
 <a href="/chimie_pcsi/tp/stereochimie.pdf" download>énoncé</a> |  
 ---  
 **TP5** --- Isomérisation de l’acide maléique en acide fumarique  
-<a href="/chimie_pcsi/tp/isomerisation.pdf" download>énoncé</a> |  <a href="https://drive.google.com/drive/folders/10WQWrEMySEuhHVFPq-fnyBG-G_MlfEWG?usp=sharing" target="_blank" rel="noopener noreferrer"> dossier récupération comptes-rendus</a>  
+<a href="/chimie_pcsi/tp/isomerisation.pdf" download>énoncé</a> |  <a href="https://drive.google.com/drive/folders/1fUijNUWCVGCY-voLsCSaBsjSCBbxYvER?usp=sharing" target="_blank" rel="noopener noreferrer"> dossier récupération comptes-rendus</a>  
 ---  
 **TP6** --- Détermination d'une constante d'équilibre  
 <a href="/chimie_pcsi/tp/Complexe_feSCN.pdf" download>énoncé</a> | <a href="https://docs.google.com/document/d/1dcvvDTUwxA-SD4NQPtXconV90uOLlzZcPirD-ICSG4s/edit?usp=drive_link" download>document à rendre</a>  
